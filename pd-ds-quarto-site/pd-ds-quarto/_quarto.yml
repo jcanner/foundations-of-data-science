@@ -1,0 +1,53 @@
+project:
+  type: website
+  output-dir: _site
+
+website:
+  title: "Data Science Integration for Lower-Division Courses"
+  navbar:
+    left:
+      - href: index.qmd
+        text: Home
+      - text: Courses
+        menu:
+          - href: courses/precalculus.qmd
+            text: Precalculus
+          - href: courses/differential-calculus.qmd
+            text: Differential Calculus
+          - href: courses/integral-calculus.qmd
+            text: Integral Calculus
+          - href: courses/multivariable-calculus.qmd
+            text: Multivariable Calculus
+          - href: courses/linear-algebra.qmd
+            text: Linear Algebra
+          - href: courses/intro-statistics.qmd
+            text: Introductory Statistics
+          - href: courses/intro-programming.qmd
+            text: Introductory Programming
+  sidebar:
+    style: docked
+    search: true
+    contents:
+      - index.qmd
+      - section: Courses
+        contents:
+          - courses/precalculus.qmd
+          - courses/differential-calculus.qmd
+          - courses/integral-calculus.qmd
+          - courses/multivariable-calculus.qmd
+          - courses/linear-algebra.qmd
+          - courses/intro-statistics.qmd
+          - courses/intro-programming.qmd
+
+format:
+  html:
+    theme: cosmo
+    toc: true
+    toc-depth: 3
+    code-fold: true
+    code-tools: true
+    number-sections: false
+    css: styles.css
+execute:
+  warning: false
+  message: false

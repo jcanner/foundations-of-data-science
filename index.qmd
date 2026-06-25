@@ -1,0 +1,56 @@
+---
+title: "Foundations of Data Science"
+---
+
+Data Science has become one of the fastest growing fields in recent years and mathematics, statistics, and computer science provide the foundations for a well-prepared and adaptable data scientist. Many students, especially first generation students, may not be aware of the opportunities and flexibility offered by a data science degree while those that choose a data science degree may not always see the connects between their foundational mathematics, statistics, and computer courses to their career goals and upper division course work.  
+
+This website serves as repository to help current mathematics, statistics, and computer science instructors to  
+
+1. Learn about the ways their topics connect to data science and learn more about data science, and  
+2. Access learning activities that can easily be integrated into their lower-division courses.  
+
+
+We will focus on the following courses which will assume the model defined by the [C-ID](https://www.c-id.net/descriptors/final) to conform to California Community College, California State University, and University of California System requirements for the courses. Despite the focus on the Californian system of higher education, the courses and topics should be widely applicable beyond California.  
+
+- Pre-calculus
+- Differential Calculus
+- Integral Calculus
+- Multivariable Calculus
+- Introductory Linear Algebra
+- Introductory Statistics
+- Introductory Programming
+
+In each topic, the ethical aspects of the data science topics will be included as an ethics module for the topic with applications to the classroom integration.These may include:  
+- Dealing with data
+- Limits of models
+- Noise in data
+- Bias
+- Ethical issues with modeling
+- Social implications of data and models
+- Use of ChatGPT/LLMs and other AI tools
+
+Each topic will include support for pedagogical practices for integrating the topics into the classroom using equity minded and inclusive practices. This can include activities such as:  
+- Projects (problem-based learning)
+- Discussions (inquiry-based learning)
+- Group activities (active learning)
+
+And may use any of the following tech tools  
+- Colab/jupyter notebooks or Quarto.  
+- Google docs, spreadsheets, etc.
+- Desmos, Geogebra, etc.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+This project is funded by the [CA Learning Lab: Data Science Grand Challenge](https://calearninglab.org/project/building-data-science-communities-for-improving-student-success/)

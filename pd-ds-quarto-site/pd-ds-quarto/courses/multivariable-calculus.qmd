@@ -1,0 +1,55 @@
+---
+title: "Multivariable Calculus"
+subtitle: "Partial derivatives, gradients, contours, and gradient descent"
+---
+
+
+## Activities
+
+### Activity 1: Contour maps of loss landscapes
+Students visualize a two-parameter loss surface and identify local/global minima.
+
+### Activity 2: Follow the negative gradient
+Students compute or approximate gradients and trace the path of gradient descent on a contour plot.
+
+### Activity 3: Constraints and model tradeoffs
+Students discuss constrained optimization as a model design problem: improve accuracy while limiting cost, complexity, or inequitable impact.
+
+## Ethics and equity prompt
+
+Optimization requires an objective. Ask: what did we choose to optimize, what did we leave out, and who might be affected by that choice?
+
+## R code
+
+```{r}
+loss <- function(a, b) (a - 2)^2 + 2 * (b + 1)^2 + .5 * a * b
+surface <- expand_grid(a = seq(-4, 6, length.out = 120), b = seq(-5, 3, length.out = 120)) |>
+  mutate(loss = loss(a, b))
+surface |> ggplot(aes(a, b, z = loss)) + geom_contour_filled(bins = 15) +
+  labs(title = "Two-parameter loss landscape", x = "Parameter a", y = "Parameter b")
+```
+
+```{r}
+step <- function(a, b, rate = .12) {
+  da <- 2 * (a - 2) + .5 * b
+  db <- 4 * (b + 1) + .5 * a
+  c(a - rate * da, b - rate * db)
+}
+path <- tibble(iter = 1:30, a = NA_real_, b = NA_real_)
+path$a[1] <- -3; path$b[1] <- 2.5
+for (i in 2:nrow(path)) {
+  nxt <- step(path$a[i-1], path$b[i-1])
+  path$a[i] <- nxt[1]; path$b[i] <- nxt[2]
+}
+surface |> ggplot(aes(a, b, z = loss)) + geom_contour() +
+  geom_path(data = path, aes(a, b), inherit.aes = FALSE) + geom_point(data = path, aes(a, b), inherit.aes = FALSE) +
+  labs(title = "Gradient descent path")
+```
+
+
+## Assessment ideas
+
+- Instructor pre/post: explain the data science concept in course language and identify one classroom integration point.
+- Perceived value: rate feasibility, relevance, and equity-mindedness of the activity.
+- Classroom artifact: submit an adapted project, discussion prompt, quiz item, or notebook cell.
+- Reflection: describe one modification for students with varied coding backgrounds.
