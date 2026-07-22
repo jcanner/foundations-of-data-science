@@ -34,8 +34,11 @@ Students identify the observed range of lengths and predict weights inside and o
 ### Activity 3: Linearizing nonlinear relationships
 Students transform a nonlinear relationship using logs, fit a linear model, and interpret the slope on the transformed scale.
 
+
 ## Ethics and equity prompt
 
 Who is represented in the dataset? What real-world decisions could be harmed by extrapolating outside the observed data? How can instructors help students distinguish mathematical possibility from responsible prediction?
 
+
+## Additional Resources
 
