@@ -3,11 +3,30 @@ title: "Precalculus"
 subtitle: "Functions, model choice, domain/range, interpolation/extrapolation"
 ---
 
+## Course Description and Outcomes
+Here are the general course outcomes for a Precalculus course:
+
+
+
+## Integrating Data Science into Precalculus
+Precalculus provides a foundation in understanding functions, which are the foundations of all machine learning methods - everything is just another linear model in the end.  Therefore, emphasizing aspects of modeling with linear and non-linear functions will build connections between the content and data science and reinforce the need for 
+Precalculus as a foundational course in data science
+
+### Emphasized Learning Outcomes/Content
+
+1.  
+2.  
+3.  
+
+
+
 
 ## Activities
 
 ### Activity 1: Which function fits the fish?
 Students compare linear, quadratic, power, and exponential models for predicting fish weight from length. Instructors discuss how visual fit, residual plots, and context guide model choice.
+
+
 
 ### Activity 2: Domain, range, and model misuse
 Students identify the observed range of lengths and predict weights inside and outside that range. They label predictions as interpolation or extrapolation and explain why extrapolation can be misleading.
@@ -19,44 +38,4 @@ Students transform a nonlinear relationship using logs, fit a linear model, and 
 
 Who is represented in the dataset? What real-world decisions could be harmed by extrapolating outside the observed data? How can instructors help students distinguish mathematical possibility from responsible prediction?
 
-## R code
 
-```{r}
-source("../R/setup.R")
-fish <- load_fish()
-
-fish |> ggplot(aes(Length1, Weight, color = Species)) +
-  geom_point() +
-  geom_smooth(method = "lm", se = FALSE) +
-  labs(title = "Linear model by species", x = "Length 1 (cm)", y = "Weight (g)")
-```
-
-```{r}
-models <- tibble(
-  model = c("linear", "quadratic", "log-log"),
-  fit = list(
-    lm(Weight ~ Length1, data = fish),
-    lm(Weight ~ poly(Length1, 2, raw = TRUE), data = fish),
-    lm(log(Weight) ~ log(Length1), data = fish)
-  )
-)
-models |> mutate(glance = map(fit, broom::glance)) |> unnest(glance) |>
-  select(model, r.squared, adj.r.squared, sigma) |> knitr::kable(digits = 3)
-```
-
-```{r}
-range(fish$Length1)
-new_lengths <- tibble(Length1 = c(5, 15, 30, 65))
-new_lengths |> mutate(
-  prediction = predict(lm(Weight ~ poly(Length1, 2, raw = TRUE), data = fish), newdata = new_lengths),
-  status = if_else(Length1 >= min(fish$Length1) & Length1 <= max(fish$Length1), "interpolation", "extrapolation")
-) |> knitr::kable(digits = 1)
-```
-
-
-## Assessment ideas
-
-- Instructor pre/post: explain the data science concept in course language and identify one classroom integration point.
-- Perceived value: rate feasibility, relevance, and equity-mindedness of the activity.
-- Classroom artifact: submit an adapted project, discussion prompt, quiz item, or notebook cell.
-- Reflection: describe one modification for students with varied coding backgrounds.
