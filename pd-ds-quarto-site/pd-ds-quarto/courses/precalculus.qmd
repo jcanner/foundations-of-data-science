@@ -1,7 +1,55 @@
 ---
-title: "Precalculus"
-subtitle: "Functions, model choice, domain/range, interpolation/extrapolation"
+title: "PreCalculus"
+format: 
+  live-html:
+    webr:
+      packages: 
+        - ggformula
+        - mosaic
+        - tidyverse
+      repos:
+        - https://projectmosaic.r-universe.dev
+      resources: 
+        - 
+      cell-options:
+        warning: true
+        completion: false
+execute: 
+  warning: false 
+  message: false
+  echo: true
+embed-resources: true
+code-copy: true
+code-overflow: wrap
+toc: true
+number-sections: true
+css: ../styles.css
 ---
+
+{{< include ../_extensions/r-wasm/live/_knitr.qmd >}}  
+{{< include ../_extensions/r-wasm/live/_gradethis.qmd >}}
+
+```{webr}
+#| label: theme
+#| include: false
+#| edit: false
+library(ggplot2)
+theme_set(theme_light())
+options(ggplot2.continuous.color = scale_color_viridis_c, 
+        ggplot2.continuous.fill = scale_fill_viridis_c,
+        ggplot2.discrete.color = scale_color_viridis_d,
+        ggplot2.discrete.fill = scale_fill_viridis_d)
+```
+
+```{r}
+#| label: setup-checkdown
+#| include: false
+library(checkdown)
+library(ggformula)
+library(mosaic)
+library(tidyverse)
+```
+
 
 ## Course Description and Outcomes
 Here are the general course outcomes for a Precalculus course:
@@ -25,6 +73,65 @@ Precalculus as a foundational course in data science
 
 ### Activity 1: Which function fits the fish?
 Students compare linear, quadratic, power, and exponential models for predicting fish weight from length. Instructors discuss how visual fit, residual plots, and context guide model choice.
+
+
+
+
+```{r}
+fish <- read_csv("fish.csv", show_col_types = FALSE)
+```
+
+```{webr}
+#| edit: false
+#| output: false
+library(plotly)
+fish <- read_csv("fish.csv", show_col_types = FALSE)
+```
+
+Choose a species of penguin, we'll work with that species for the rest of the tutorial.
+
+```{ojs}
+//| echo: false
+viewof input_species = Inputs.select(["Perch", "Bream", "Roach", "Pike", "Smelt", "Parkki", "Whitefish"])
+
+```
+
+<!-- penguin_info = { -->
+<!--   const description = { -->
+<!--     Adelie: md`The **Adelie** is the most widespread penguin species, and, along with the emperor penguin, is the most southerly distributed of all penguins.`, -->
+<!--     Chinstrap: md`The **chinstrap** penguin's name stems from the narrow black band under its head, which makes it appear as if it were wearing a black helmet, making it easy to identify.`, -->
+<!--     Gentoo: md`The **gentoo** penguin calls in a variety of ways, but the most frequently heard is a loud trumpeting, which the bird emits with its head thrown back.`, -->
+<!--   } -->
+<!--   return description[input_species] -->
+<!-- } -->
+
+
+```{webr}
+#| edit: false
+#| echo: false
+#| input:
+#|  - input_species
+fish |> 
+  filter(Species == input_species) |> 
+  ggplot(mapping = 
+           aes(x = Length1, 
+               y = Weight)) +
+  geom_point() +
+  labs(
+    title = "Scatterplot of Weight and Length of Fish",
+    x = "Length (cm)",
+    y = "Weight (grams)"
+  )
+```
+
+
+
+
+
+
+
+
+
 
 
 

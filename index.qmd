@@ -12,13 +12,13 @@ This website serves as repository to help current mathematics, statistics, and c
 
 We will focus on the following courses which will assume the model defined by the [C-ID](https://www.c-id.net/descriptors/final) to conform to California Community College, California State University, and University of California System requirements for the courses. Despite the focus on the Californian system of higher education, the courses and topics should be widely applicable beyond California.  
 
-- Pre-calculus
-- Differential Calculus
-- Integral Calculus
-- Multivariable Calculus
-- Introductory Linear Algebra
-- Introductory Statistics
-- Introductory Programming
+- [Pre-calculus](../courses/precalculus.qmd)
+- [Differential Calculus (I)](../courses/differential-calculus.qmd)
+- [Integral Calculus (II)](../courses/integral-calculus.qmd)
+- [Multivariable Calculus (III)](../courses/multivariate-calculus.qmd)
+- [Introductory Linear Algebra](../courses/linear-algebra.qmd)
+- [Introductory Statistics](../courses/intro-statistics.qmd)
+- [Introductory Programming](../courses/intro-programming.qmd)
 
 In each topic, the ethical aspects of the data science topics will be included as an ethics module for the topic with applications to the classroom integration.These may include:  
 - Dealing with data
@@ -38,18 +38,6 @@ And may use any of the following tech tools
 - Colab/jupyter notebooks or Quarto.  
 - Google docs, spreadsheets, etc.
 - Desmos, Geogebra, etc.
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 

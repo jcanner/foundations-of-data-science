@@ -1,5 +1,5 @@
 ---
-title: "About"
+title: "About Us"
 ---
 
 The materials provided were developed in response to a Faculty Development group of Mathematicians, Statisticians, and Computer Scientists at University of California, Santa Cruz and California State University, Monterey Bay.
