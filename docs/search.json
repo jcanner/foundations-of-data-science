@@ -1,0 +1,51 @@
+[
+  {
+    "objectID": "precalculus.html#course-description-and-outcomes",
+    "href": "precalculus.html#course-description-and-outcomes",
+    "title": "PreCalculus",
+    "section": "1 Course Description and Outcomes",
+    "text": "1 Course Description and Outcomes\nHere are the general course outcomes for a Precalculus course:"
+  },
+  {
+    "objectID": "precalculus.html#integrating-data-science-into-precalculus",
+    "href": "precalculus.html#integrating-data-science-into-precalculus",
+    "title": "PreCalculus",
+    "section": "2 Integrating Data Science into Precalculus",
+    "text": "2 Integrating Data Science into Precalculus\nPrecalculus provides a foundation in understanding functions, which are the foundations of all machine learning methods - everything is just another linear model in the end. Therefore, emphasizing aspects of modeling with linear and non-linear functions will build connections between the content and data science and reinforce the need for Precalculus as a foundational course in data science\n\n2.1 Emphasized Learning Outcomes/Content"
+  },
+  {
+    "objectID": "precalculus.html#activities",
+    "href": "precalculus.html#activities",
+    "title": "PreCalculus",
+    "section": "3 Activities",
+    "text": "3 Activities\n\n3.1 Activity 1: Which function fits the fish?\nStudents compare linear, quadratic, power, and exponential models for predicting fish weight from length. Instructors discuss how visual fit, residual plots, and context guide model choice.\n\nfish &lt;- read_csv(\"fish.csv\", show_col_types = FALSE)\n\n\n\n\n\n\n\n\n\nChoose a species of penguin, we’ll work with that species for the rest of the tutorial.\n\nviewof input_species = Inputs.select([\"Perch\", \"Bream\", \"Roach\", \"Pike\", \"Smelt\", \"Parkki\", \"Whitefish\"])\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n3.2 Activity 2: Domain, range, and model misuse\nStudents identify the observed range of lengths and predict weights inside and outside that range. They label predictions as interpolation or extrapolation and explain why extrapolation can be misleading.\n\n\n3.3 Activity 3: Linearizing nonlinear relationships\nStudents transform a nonlinear relationship using logs, fit a linear model, and interpret the slope on the transformed scale."
+  },
+  {
+    "objectID": "precalculus.html#ethics-and-equity-prompt",
+    "href": "precalculus.html#ethics-and-equity-prompt",
+    "title": "PreCalculus",
+    "section": "4 Ethics and equity prompt",
+    "text": "4 Ethics and equity prompt\nWho is represented in the dataset? What real-world decisions could be harmed by extrapolating outside the observed data? How can instructors help students distinguish mathematical possibility from responsible prediction?"
+  },
+  {
+    "objectID": "precalculus.html#additional-resources",
+    "href": "precalculus.html#additional-resources",
+    "title": "PreCalculus",
+    "section": "5 Additional Resources",
+    "text": "5 Additional Resources"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Foundations of Data Science",
+    "section": "",
+    "text": "Data Science has become one of the fastest growing fields in recent years and mathematics, statistics, and computer science provide the foundations for a well-prepared and adaptable data scientist. Many students, especially first generation students, may not be aware of the opportunities and flexibility offered by a data science degree while those that choose a data science degree may not always see the connects between their foundational mathematics, statistics, and computer courses to their career goals and upper division course work.\nThis website serves as repository to help current mathematics, statistics, and computer science instructors to\n\nLearn about the ways their topics connect to data science and learn more about data science, and\n\nAccess learning activities that can easily be integrated into their lower-division courses.\n\nWe will focus on the following courses which will assume the model defined by the C-ID to conform to California Community College, California State University, and University of California System requirements for the courses. Despite the focus on the Californian system of higher education, the courses and topics should be widely applicable beyond California.\n\nPre-calculus\nDifferential Calculus (I)\nIntegral Calculus (II)\nMultivariable Calculus (III)\nIntroductory Linear Algebra\nIntroductory Statistics\nIntroductory Programming\n\nIn each topic, the ethical aspects of the data science topics will be included as an ethics module for the topic with applications to the classroom integration.These may include:\n- Dealing with data - Limits of models - Noise in data - Bias - Ethical issues with modeling - Social implications of data and models - Use of ChatGPT/LLMs and other AI tools\nEach topic will include support for pedagogical practices for integrating the topics into the classroom using equity minded and inclusive practices. This can include activities such as:\n- Projects (problem-based learning) - Discussions (inquiry-based learning) - Group activities (active learning)\nAnd may use any of the following tech tools\n- Colab/jupyter notebooks or Quarto.\n- Google docs, spreadsheets, etc. - Desmos, Geogebra, etc.\nThis project is funded by the CA Learning Lab: Data Science Grand Challenge"
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About Us",
+    "section": "",
+    "text": "The materials provided were developed in response to a Faculty Development group of Mathematicians, Statisticians, and Computer Scientists at University of California, Santa Cruz and California State University, Monterey Bay."
+  }
+]

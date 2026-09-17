@@ -26,8 +26,7 @@ number-sections: true
 css: ../styles.css
 ---
 
-{{< include ../_extensions/r-wasm/live/_knitr.qmd >}}  
-{{< include ../_extensions/r-wasm/live/_gradethis.qmd >}}
+{{< include _extensions/r-wasm/live/_knitr.qmd >}}  
 
 ```{webr}
 #| label: theme
@@ -77,7 +76,7 @@ Students compare linear, quadratic, power, and exponential models for predicting
 
 
 
-```{r}
+```{webr}
 fish <- read_csv("fish.csv", show_col_types = FALSE)
 ```
 
