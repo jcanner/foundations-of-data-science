@@ -10,7 +10,7 @@ format:
       repos:
         - https://projectmosaic.r-universe.dev
       resources: 
-        - 
+        - https://raw.githubusercontent.com/jcanner/foundations-of-data-science/refs/heads/master/fish.csv
       cell-options:
         warning: true
         completion: false
