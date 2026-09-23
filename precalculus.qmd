@@ -151,13 +151,20 @@ We can begin with only two variables where x= length, and y= weight. We can show
 
 ### Part 2: Now we can fit a linear model to our scatterplots and discuss what we notice.
 
+
+```{ojs}
+//| echo: false
+viewof input_species2 = Inputs.select(["Perch", "Bream", "Roach", "Pike", "Smelt", "Parkki", "Whitefish"])
+
+```
+
 ```{webr}
 #| edit: false
 #| echo: false
 #| input:
-#|  - input_species
+#|  - input_species2
 fish |> 
-  filter(Species == input_species) |> 
+  filter(Species == input_species2) |> 
   ggplot(mapping = 
            aes(x = Length1, 
                y = Weight)) +
