@@ -50,31 +50,52 @@ library(tidyverse)
 ```
 
 
-## Course Description and Outcomes
-Here are the general course outcomes for a Precalculus course:
-
+## Overview
+Precalculus students learn functions as graphs, tables, transformations, and symbolic rules. In data science, functions can be used as models, or simply mathematical descriptions of patterns for real data. The following discussion lesson plan provides instructors guidance on how to connect concepts about functions to data modeling at an introductory level. The goal is to help students see that functions can be used to approximate and describe real world relationships, which is the foundation of machine learning.
 
 
 ## Integrating Data Science into Precalculus
 Precalculus provides a foundation in understanding functions, which are the foundations of all machine learning methods - everything is just another linear model in the end.  Therefore, emphasizing aspects of modeling with linear and non-linear functions will build connections between the content and data science and reinforce the need for 
 Precalculus as a foundational course in data science
 
-### Emphasized Learning Outcomes/Content
+### Precalculus Content
 
-1.  
-2.  
-3.  
+1. Evaluating functions 
+2. Graphs/functions
+3. Linear/nonlinear functions
+4. Exponential/log functions
+5. Interpreting graphs
+6. Modeling data.
+
+### Data Science Content
+
+1. Explanatory/response variables
+2. Scatterplots
+3. Modeling
+4. Predictions
+5. Interpreting graphs
+
+## Goals
+1. Explain how functions can be introduced as models of data.
+2. Connect the idea of “input”/”output” to explanatory/response variables.
+3. Use real data sets (fish data set) to compare different function models.
+4. Discuss limitations of using mathematical models for predictions.
+
+## Lesson
+
+In precalculus, we describe a function as a rule that assigns each input exactly one output. In data science, we can view functions as a model. A model is a simplified representation of data that describes patterns and allows us to make predictions. 
+
+In this lesson we will be using the Fish Market Data set. This data set includes seven fish species and measurements such as their weight, length, height, and width. In this activity, students can use the physical features of the fish as input variables to predict a fish’s weight. This could be useful for fishermen, where measuring a fish’s length or width may be easier than weighing it. Students can compare linear and polynomial models to see which better represents the relationship between a fish’s measurements and its weight. 
+
+We can also introduce the idea that real data does not always have perfect linear patterns, such as a fish that may gain weight faster than the length increases. We can then discuss how nonlinear models may be helpful in describing different types of patterns in data. 
 
 
+## Activity
 
-
-## Activities
-
-### Activity 1: Which function fits the fish?
+### Part 1: Which function fits the fish?
 Students compare linear, quadratic, power, and exponential models for predicting fish weight from length. Instructors discuss how visual fit, residual plots, and context guide model choice.
 
-
-
+Can we estimate the weight of a fish based on its other physical features?
 
 ```{webr}
 fish <- read_csv("fish.csv", show_col_types = FALSE)
@@ -87,7 +108,6 @@ library(plotly)
 fish <- read_csv("fish.csv", show_col_types = FALSE)
 ```
 
-Choose a species of penguin, we'll work with that species for the rest of the tutorial.
 
 ```{ojs}
 //| echo: false
@@ -123,7 +143,32 @@ fish |>
   )
 ```
 
+We can begin with only two variables where x= length, and y= weight. We can show students a scatter plot of fish length vs. weight for different species of fish. We can then have a discussion about the plot.
 
+1. “What do you notice about the relationship between length and weight?
+2. “Is the relationship linear? Is it a function?”
+3. "Does the relationship change depending on species? What do you notice is different?"
+
+### Part 2: Now we can fit a linear model to our scatterplots and discuss what we notice.
+
+```{webr}
+#| edit: false
+#| echo: false
+#| input:
+#|  - input_species
+fish |> 
+  filter(Species == input_species) |> 
+  ggplot(mapping = 
+           aes(x = Length1, 
+               y = Weight)) +
+  geom_point() +
+  geom_smooth(method = "lm", se = FALSE)+
+  labs(
+    title = "Scatterplot of Weight and Length of Fish With Linear Models",
+    x = "Length (cm)",
+    y = "Weight (grams)"
+  )
+```
 
 
 

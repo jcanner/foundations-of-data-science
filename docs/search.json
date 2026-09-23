@@ -11,7 +11,7 @@
     "href": "precalculus.html#integrating-data-science-into-precalculus",
     "title": "PreCalculus",
     "section": "2 Integrating Data Science into Precalculus",
-    "text": "2 Integrating Data Science into Precalculus\nPrecalculus provides a foundation in understanding functions, which are the foundations of all machine learning methods - everything is just another linear model in the end. Therefore, emphasizing aspects of modeling with linear and non-linear functions will build connections between the content and data science and reinforce the need for Precalculus as a foundational course in data science\n\n2.1 Emphasized Learning Outcomes/Content"
+    "text": "2 Integrating Data Science into Precalculus\nPrecalculus provides a foundation in understanding functions, which are the foundations of all machine learning methods - everything is just another linear model in the end. Therefore, emphasizing aspects of modeling with linear and non-linear functions will build connections between the content and data science and reinforce the need for Precalculus as a foundational course in data science\n\n2.1 Precalculus Content\n\nEvaluating functions\nGraphs/functions\nLinear/nonlinear functions\nExponential/log functions\nInterpreting graphs\nModeling data.\n\n\n\n2.2 Data Science Content\n\nExplanatory/response variables\nScatterplots\nModeling\nPredictions\nInterpreting graphs"
   },
   {
     "objectID": "precalculus.html#activities",
@@ -24,15 +24,15 @@
     "objectID": "precalculus.html#ethics-and-equity-prompt",
     "href": "precalculus.html#ethics-and-equity-prompt",
     "title": "PreCalculus",
-    "section": "4 Ethics and equity prompt",
-    "text": "4 Ethics and equity prompt\nWho is represented in the dataset? What real-world decisions could be harmed by extrapolating outside the observed data? How can instructors help students distinguish mathematical possibility from responsible prediction?"
+    "section": "6 Ethics and equity prompt",
+    "text": "6 Ethics and equity prompt\nWho is represented in the dataset? What real-world decisions could be harmed by extrapolating outside the observed data? How can instructors help students distinguish mathematical possibility from responsible prediction?"
   },
   {
     "objectID": "precalculus.html#additional-resources",
     "href": "precalculus.html#additional-resources",
     "title": "PreCalculus",
-    "section": "5 Additional Resources",
-    "text": "5 Additional Resources"
+    "section": "7 Additional Resources",
+    "text": "7 Additional Resources"
   },
   {
     "objectID": "about.html",
@@ -47,5 +47,33 @@
     "title": "Foundations of Data Science",
     "section": "",
     "text": "Data Science has become one of the fastest growing fields in recent years and mathematics, statistics, and computer science provide the foundations for a well-prepared and adaptable data scientist. Many students, especially first generation students, may not be aware of the opportunities and flexibility offered by a data science degree while those that choose a data science degree may not always see the connects between their foundational mathematics, statistics, and computer courses to their career goals and upper division course work.\nThis website serves as repository to help current mathematics, statistics, and computer science instructors to\n\nLearn about the ways their topics connect to data science and learn more about data science, and\n\nAccess learning activities that can easily be integrated into their lower-division courses.\n\nWe will focus on the following courses which will assume the model defined by the C-ID to conform to California Community College, California State University, and University of California System requirements for the courses. Despite the focus on the Californian system of higher education, the courses and topics should be widely applicable beyond California.\n\nPre-calculus\nDifferential Calculus (I)\nIntegral Calculus (II)\nMultivariable Calculus (III)\nIntroductory Linear Algebra\nIntroductory Statistics\nIntroductory Programming\n\nIn each topic, the ethical aspects of the data science topics will be included as an ethics module for the topic with applications to the classroom integration.These may include:\n- Dealing with data - Limits of models - Noise in data - Bias - Ethical issues with modeling - Social implications of data and models - Use of ChatGPT/LLMs and other AI tools\nEach topic will include support for pedagogical practices for integrating the topics into the classroom using equity minded and inclusive practices. This can include activities such as:\n- Projects (problem-based learning) - Discussions (inquiry-based learning) - Group activities (active learning)\nAnd may use any of the following tech tools\n- Colab/jupyter notebooks or Quarto.\n- Google docs, spreadsheets, etc. - Desmos, Geogebra, etc.\nThis project is funded by the CA Learning Lab: Data Science Grand Challenge"
+  },
+  {
+    "objectID": "precalculus.html#overview",
+    "href": "precalculus.html#overview",
+    "title": "PreCalculus",
+    "section": "1 Overview",
+    "text": "1 Overview\nPrecalculus students learn functions as graphs, tables, transformations, and symbolic rules. In data science, functions can be used as models, or simply mathematical descriptions of patterns for real data. The following discussion lesson plan provides instructors guidance on how to connect concepts about functions to data modeling at an introductory level. The goal is to help students see that functions can be used to approximate and describe real world relationships, which is the foundation of machine learning."
+  },
+  {
+    "objectID": "precalculus.html#goals",
+    "href": "precalculus.html#goals",
+    "title": "PreCalculus",
+    "section": "3 Goals",
+    "text": "3 Goals\n\nExplain how functions can be introduced as models of data.\nConnect the idea of “input”/”output” to explanatory/response variables.\nUse real data sets (fish data set) to compare different function models.\nDiscuss limitations of using mathematical models for predictions."
+  },
+  {
+    "objectID": "precalculus.html#lesson",
+    "href": "precalculus.html#lesson",
+    "title": "PreCalculus",
+    "section": "4 Lesson",
+    "text": "4 Lesson\nIn precalculus, we describe a function as a rule that assigns each input exactly one output. In data science, we can view functions as a model. A model is a simplified representation of data that describes patterns and allows us to make predictions.\nIn this lesson we will be using the Fish Market Data set. This data set includes seven fish species and measurements such as their weight, length, height, and width. In this activity, students can use the physical features of the fish as input variables to predict a fish’s weight. This could be useful for fishermen, where measuring a fish’s length or width may be easier than weighing it. Students can compare linear and polynomial models to see which better represents the relationship between a fish’s measurements and its weight.\nWe can also introduce the idea that real data does not always have perfect linear patterns, such as a fish that may gain weight faster than the length increases. We can then discuss how nonlinear models may be helpful in describing different types of patterns in data."
+  },
+  {
+    "objectID": "precalculus.html#activity",
+    "href": "precalculus.html#activity",
+    "title": "PreCalculus",
+    "section": "5 Activity",
+    "text": "5 Activity\n\n5.1 Part 1: Which function fits the fish?\nStudents compare linear, quadratic, power, and exponential models for predicting fish weight from length. Instructors discuss how visual fit, residual plots, and context guide model choice.\nCan we estimate the weight of a fish based on its other physical features?\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nviewof input_species = Inputs.select([\"Perch\", \"Bream\", \"Roach\", \"Pike\", \"Smelt\", \"Parkki\", \"Whitefish\"])\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nWe can begin with only two variables where x= length, and y= weight. We can show students a scatter plot of fish length vs. weight for different species of fish. We can then have a discussion about the plot.\n\n“What do you notice about the relationship between length and weight?\n“Is the relationship linear? Is it a function?”\n“Does the relationship change depending on species? What do you notice is different?”\n\n\n\n5.2 Part 2: Now we can fit a linear model to our scatterplots and discuss what we notice.\n\n\n\n\n\n\n\n\n\n\n5.3 Activity 2: Domain, range, and model misuse\nStudents identify the observed range of lengths and predict weights inside and outside that range. They label predictions as interpolation or extrapolation and explain why extrapolation can be misleading.\n\n\n5.4 Activity 3: Linearizing nonlinear relationships\nStudents transform a nonlinear relationship using logs, fit a linear model, and interpret the slope on the transformed scale."
   }
 ]
