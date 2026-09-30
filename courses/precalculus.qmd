@@ -36,6 +36,8 @@ options(ggplot2.continuous.color = scale_color_viridis_c,
         ggplot2.continuous.fill = scale_fill_viridis_c,
         ggplot2.discrete.color = scale_color_viridis_d,
         ggplot2.discrete.fill = scale_fill_viridis_d)
+
+fish <- read_csv("fish.csv", show_col_types = FALSE)
 ```
 
 ```{r}
@@ -95,7 +97,7 @@ Can we estimate the weight of a fish based on its other physical features?
 ```{webr}
 #| edit: false
 #| output: false
-fish <- read_csv("fish.csv", show_col_types = FALSE)
+
 ```
 
 ```{ojs}
