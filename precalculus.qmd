@@ -12,7 +12,7 @@ format:
       resources: 
         - https://raw.githubusercontent.com/jcanner/foundations-of-data-science/refs/heads/master/fish.csv
       cell-options:
-        warning: true
+        warning: false
         completion: false
 execute: 
   warning: false 
@@ -98,6 +98,8 @@ Students compare linear, quadratic, power, and exponential models for predicting
 Can we estimate the weight of a fish based on its other physical features?
 
 ```{webr}
+#| edit: false
+#| output: false
 fish <- read_csv("fish.csv", show_col_types = FALSE)
 ```
 
@@ -169,7 +171,7 @@ fish |>
            aes(x = Length1, 
                y = Weight)) +
   geom_point() +
-  geom_smooth(method = "lm", se = FALSE)+
+  geom_smooth(method = "lm", se = FALSE, formula = y~x)+
   labs(
     title = "Scatterplot of Weight and Length of Fish With Linear Models",
     x = "Length (cm)",
@@ -177,25 +179,128 @@ fish |>
   )
 ```
 
+We can then have students examine a linear model and discuss.
+1. “For what species does the linear model accurately represent?”
+2. “What does the slope mean in the context of the problem?”
+3. “What does the y-intercept mean in the context of the problem?”
+4. “Does the y-intercept make logical sense?”
+5. “Does the line fit the model appropriately?”
+
+### Part 3: Next, we will examine polynomial trend lines.
+
+
+```{ojs}
+//| echo: false
+viewof input_species3 = Inputs.select(["Perch", "Bream", "Roach", "Pike", "Smelt", "Parkki", "Whitefish"])
+
+```
+
+```{webr}
+#| edit: false
+#| echo: false
+#| input:
+#|  - input_species3
+fish |> 
+  filter(Species == input_species3) |> 
+  ggplot(mapping = 
+           aes(x = Length1, 
+               y = Weight)) +
+  geom_point() +
+  geom_smooth(method = 'loess', se = FALSE, formula = y~x)+
+  labs(
+    title = "Scatterplot of Weight and Length of Fish With Linear Models",
+    x = "Length (cm)",
+    y = "Weight (grams)"
+  )
+```
+
+Next, we can show students a polynomial trend line and discuss.
+
+1. “How does this trend line compare to the linear trend line?”
+2. “Can we predict the length of a fish by using its weight?”
+
+## Part 4: Transformed Variables
+
+Students can also explore whether transforming a variable can make the relationship appear more linear. We can create new columns for (Length^2) and (Length^3), and plot the weight against each transformed variable. Students can compare the transformed graphs with the original plot and discuss which model looks more linear.
+
+```{ojs}
+//| echo: false
+viewof input_species4 = Inputs.select(["Perch", "Bream", "Roach", "Pike", "Smelt", "Parkki", "Whitefish"])
+
+```
+
+:::: {layout="[50, 50]"}
+
+::: {#squared-column}
 
 
 
+```{webr}
+#| edit: false
+#| echo: false
+#| input:
+#|   - input_species4
+
+fish |>
+  filter(Species == input_species4) |>
+  mutate(
+    Length1_squared = Length1^2
+  ) |>
+  ggplot(aes(x = Length1_squared, y = Weight)) +
+  geom_point() +
+  geom_smooth(method = "lm", se = TRUE,formula = y ~ poly(x, 2)) +
+  labs(
+    title = "Weight vs. Length Squared",
+    x = "Length² (cm²)",
+    y = "Weight (grams)"
+  )
+```
+
+:::
+
+::: {#squared-column}
 
 
 
+```{webr}
+#| edit: false
+#| echo: false
+#| input:
+#|   - input_species4
+
+fish |>
+  filter(Species == input_species4) |>
+  mutate(
+    Length1_cubed = Length1^3
+  ) |>
+  ggplot(aes(x = Length1_cubed, y = Weight)) +
+  geom_point() +
+  geom_smooth(method = "lm", se = TRUE, formula = y ~ poly(x, 2)) +
+  labs(
+    title = "Weight vs. Length Cubed",
+    x = "Length³ (cm³)",
+    y = "Weight (grams)"
+  )
+```
+
+:::
+
+::::
+
+
+1. “Does plotting weight against (Length^2) or (Length^3) change the pattern?”
+2. “Which graph appears to be the most linear?”
+3. “Does a more linear graph make the predictions easier or more accurate?”
+4. Take note of which species of fish work well with the two different transformations.
 
 
 
 ### Activity 2: Domain, range, and model misuse
 Students identify the observed range of lengths and predict weights inside and outside that range. They label predictions as interpolation or extrapolation and explain why extrapolation can be misleading.
 
-### Activity 3: Linearizing nonlinear relationships
-Students transform a nonlinear relationship using logs, fit a linear model, and interpret the slope on the transformed scale.
+## Conclusion
 
-
-## Ethics and equity prompt
-
-Who is represented in the dataset? What real-world decisions could be harmed by extrapolating outside the observed data? How can instructors help students distinguish mathematical possibility from responsible prediction?
+After this lesson, students should now understand that functions can model relationships in the real world, and help us make predictions. Linear and quadratic models are simple examples of the types of models that can be used with machine learning. However, not all models are good models and are only approximations, so they may not always be accurate or make sense outside of the context of our data.
 
 
 ## Additional Resources

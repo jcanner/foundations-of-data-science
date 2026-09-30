@@ -24,15 +24,15 @@
     "objectID": "precalculus.html#ethics-and-equity-prompt",
     "href": "precalculus.html#ethics-and-equity-prompt",
     "title": "PreCalculus",
-    "section": "6 Ethics and equity prompt",
-    "text": "6 Ethics and equity prompt\nWho is represented in the dataset? What real-world decisions could be harmed by extrapolating outside the observed data? How can instructors help students distinguish mathematical possibility from responsible prediction?"
+    "section": "7 Ethics and equity prompt",
+    "text": "7 Ethics and equity prompt\nWho is represented in the dataset? What real-world decisions could be harmed by extrapolating outside the observed data? How can instructors help students distinguish mathematical possibility from responsible prediction?"
   },
   {
     "objectID": "precalculus.html#additional-resources",
     "href": "precalculus.html#additional-resources",
     "title": "PreCalculus",
-    "section": "7 Additional Resources",
-    "text": "7 Additional Resources"
+    "section": "8 Additional Resources",
+    "text": "8 Additional Resources"
   },
   {
     "objectID": "about.html",
@@ -74,6 +74,20 @@
     "href": "precalculus.html#activity",
     "title": "PreCalculus",
     "section": "5 Activity",
-    "text": "5 Activity\n\n5.1 Part 1: Which function fits the fish?\nStudents compare linear, quadratic, power, and exponential models for predicting fish weight from length. Instructors discuss how visual fit, residual plots, and context guide model choice.\nCan we estimate the weight of a fish based on its other physical features?\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nviewof input_species = Inputs.select([\"Perch\", \"Bream\", \"Roach\", \"Pike\", \"Smelt\", \"Parkki\", \"Whitefish\"])\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nWe can begin with only two variables where x= length, and y= weight. We can show students a scatter plot of fish length vs. weight for different species of fish. We can then have a discussion about the plot.\n\n“What do you notice about the relationship between length and weight?\n“Is the relationship linear? Is it a function?”\n“Does the relationship change depending on species? What do you notice is different?”\n\n\n\n5.2 Part 2: Now we can fit a linear model to our scatterplots and discuss what we notice.\n\nviewof input_species2 = Inputs.select([\"Perch\", \"Bream\", \"Roach\", \"Pike\", \"Smelt\", \"Parkki\", \"Whitefish\"])\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n5.3 Activity 2: Domain, range, and model misuse\nStudents identify the observed range of lengths and predict weights inside and outside that range. They label predictions as interpolation or extrapolation and explain why extrapolation can be misleading.\n\n\n5.4 Activity 3: Linearizing nonlinear relationships\nStudents transform a nonlinear relationship using logs, fit a linear model, and interpret the slope on the transformed scale."
+    "text": "5 Activity\n\n5.1 Part 1: Which function fits the fish?\nStudents compare linear, quadratic, power, and exponential models for predicting fish weight from length. Instructors discuss how visual fit, residual plots, and context guide model choice.\nCan we estimate the weight of a fish based on its other physical features?\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nviewof input_species = Inputs.select([\"Perch\", \"Bream\", \"Roach\", \"Pike\", \"Smelt\", \"Parkki\", \"Whitefish\"])\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nWe can begin with only two variables where x= length, and y= weight. We can show students a scatter plot of fish length vs. weight for different species of fish. We can then have a discussion about the plot.\n\n“What do you notice about the relationship between length and weight?\n“Is the relationship linear? Is it a function?”\n“Does the relationship change depending on species? What do you notice is different?”\n\n\n\n5.2 Part 2: Now we can fit a linear model to our scatterplots and discuss what we notice.\n\nviewof input_species2 = Inputs.select([\"Perch\", \"Bream\", \"Roach\", \"Pike\", \"Smelt\", \"Parkki\", \"Whitefish\"])\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nWe can then have students examine a linear model and discuss. 1. “For what species does the linear model accurately represent?” 2. “What does the slope mean in the context of the problem?” 3. “What does the y-intercept mean in the context of the problem?” 4. “Does the y-intercept make logical sense?” 5. “Does the line fit the model appropriately?”\n\n\n5.3 Part 3: Next, we will examine polynomial trend lines.\n\nviewof input_species3 = Inputs.select([\"Perch\", \"Bream\", \"Roach\", \"Pike\", \"Smelt\", \"Parkki\", \"Whitefish\"])\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNext, we can show students a polynomial trend line and discuss.\n\n“How does this trend line compare to the linear trend line?”\n“Can we predict the length of a fish by using its weight?”"
+  },
+  {
+    "objectID": "precalculus.html#part-4-transformed-variables",
+    "href": "precalculus.html#part-4-transformed-variables",
+    "title": "PreCalculus",
+    "section": "6 Part 4: Transformed Variables",
+    "text": "6 Part 4: Transformed Variables\nStudents can also explore whether transforming a variable can make the relationship appear more linear. We can create new columns for (Length^2) and (Length^3), and plot the weight against each transformed variable. Students can compare the transformed graphs with the original plot and discuss which model looks more linear.\n\nviewof input_species4 = Inputs.select([\"Perch\", \"Bream\", \"Roach\", \"Pike\", \"Smelt\", \"Parkki\", \"Whitefish\"])\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n“Does plotting weight against (Length^2) or (Length^3) change the pattern?”\n“Which graph appears to be the most linear?”\n“Does a more linear graph make the predictions easier or more accurate?”\nTake note of which species of fish work well with the two different transformations.\n\n\n6.1 Activity 2: Domain, range, and model misuse\nStudents identify the observed range of lengths and predict weights inside and outside that range. They label predictions as interpolation or extrapolation and explain why extrapolation can be misleading."
+  },
+  {
+    "objectID": "precalculus.html#conclusion",
+    "href": "precalculus.html#conclusion",
+    "title": "PreCalculus",
+    "section": "7 Conclusion",
+    "text": "7 Conclusion\nAfter this lesson, students should now understand that functions can model relationships in the real world, and help us make predictions. Linear and quadratic models are simple examples of the types of models that can be used with machine learning. However, not all models are good models and are only approximations, so they may not always be accurate or make sense outside of the context of our data."
   }
 ]
