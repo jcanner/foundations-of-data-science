@@ -4,11 +4,8 @@ format:
   live-html:
     webr:
       packages: 
-        - ggformula
-        - mosaic
-        - tidyverse
-      repos:
-        - https://projectmosaic.r-universe.dev
+        - ggplot2
+        - readr
       resources: 
         - https://raw.githubusercontent.com/jcanner/foundations-of-data-science/refs/heads/master/fish.csv
       cell-options:
@@ -26,13 +23,14 @@ number-sections: true
 css: ../styles.css
 ---
 
-{{< include _extensions/r-wasm/live/_knitr.qmd >}}  
+{{< include ../_extensions/r-wasm/live/_knitr.qmd >}}  
 
 ```{webr}
 #| label: theme
 #| include: false
 #| edit: false
 library(ggplot2)
+library(readr)
 theme_set(theme_light())
 options(ggplot2.continuous.color = scale_color_viridis_c, 
         ggplot2.continuous.fill = scale_fill_viridis_c,
@@ -43,10 +41,8 @@ options(ggplot2.continuous.color = scale_color_viridis_c,
 ```{r}
 #| label: setup-checkdown
 #| include: false
-library(checkdown)
-library(ggformula)
-library(mosaic)
-library(tidyverse)
+library(readr)
+library(ggplot2)
 ```
 
 
@@ -102,12 +98,6 @@ Can we estimate the weight of a fish based on its other physical features?
 fish <- read_csv("fish.csv", show_col_types = FALSE)
 ```
 
-```{webr}
-#| edit: false
-#| output: false
-library(plotly)
-fish <- read_csv("fish.csv", show_col_types = FALSE)
-```
 
 
 ```{ojs}

@@ -13,7 +13,7 @@ website:
         text: "Home"
       - href: about.qmd
         text: "About"
-      - href: precalculus.qmd
+      - href: courses/precalculus.qmd
         text: "Precalculus"
   page-footer:
     right: "This page is built with ❤️ and [Quarto](https://quarto.org/)."
