@@ -4,8 +4,7 @@ format:
   live-html:
     webr:
       packages: 
-        - ggplot2
-        - readr
+        - tidyverse
       resources: 
         - https://raw.githubusercontent.com/jcanner/foundations-of-data-science/refs/heads/master/courses/data/fish.csv
       cell-options:
@@ -29,8 +28,7 @@ css: ../styles.css
 #| label: theme
 #| include: false
 #| edit: false
-library(ggplot2)
-library(readr)
+library(tidyverse)
 theme_set(theme_light())
 options(ggplot2.continuous.color = scale_color_viridis_c, 
         ggplot2.continuous.fill = scale_fill_viridis_c,
