@@ -7,7 +7,7 @@ format:
         - ggplot2
         - readr
       resources: 
-        - https://raw.githubusercontent.com/jcanner/foundations-of-data-science/refs/heads/master/fish.csv
+        - https://raw.githubusercontent.com/jcanner/foundations-of-data-science/refs/heads/master/courses/data/fish.csv
       cell-options:
         warning: false
         completion: false
@@ -97,8 +97,6 @@ Can we estimate the weight of a fish based on its other physical features?
 #| output: false
 fish <- read_csv("fish.csv", show_col_types = FALSE)
 ```
-
-
 
 ```{ojs}
 //| echo: false
