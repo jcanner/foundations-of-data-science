@@ -55,8 +55,7 @@ Precalculus students learn functions as graphs, tables, transformations, and sym
 
 
 ## Integrating Data Science into Precalculus
-Precalculus provides a foundation in understanding functions, which are the foundations of all machine learning methods - everything is just another linear model in the end.  Therefore, emphasizing aspects of modeling with linear and non-linear functions will build connections between the content and data science and reinforce the need for 
-Precalculus as a foundational course in data science
+Precalculus provides a foundation in understanding functions, which are the foundations of all machine learning methods - everything is just another linear model in the end.  Therefore, emphasizing aspects of modeling with linear and non-linear functions will build connections between the content and data science and reinforce the need for Precalculus as a foundational course in data science
 
 ### Precalculus Content
 
@@ -77,7 +76,7 @@ Precalculus as a foundational course in data science
 
 ## Goals
 1. Explain how functions can be introduced as models of data.
-2. Connect the idea of “input”/”output” to explanatory/response variables.
+2. Connect the idea of input/output to explanatory/response variables.
 3. Use real data sets (fish data set) to compare different function models.
 4. Discuss limitations of using mathematical models for predictions.
 
@@ -117,16 +116,6 @@ viewof input_species = Inputs.select(["Perch", "Bream", "Roach", "Pike", "Smelt"
 
 ```
 
-<!-- penguin_info = { -->
-<!--   const description = { -->
-<!--     Adelie: md`The **Adelie** is the most widespread penguin species, and, along with the emperor penguin, is the most southerly distributed of all penguins.`, -->
-<!--     Chinstrap: md`The **chinstrap** penguin's name stems from the narrow black band under its head, which makes it appear as if it were wearing a black helmet, making it easy to identify.`, -->
-<!--     Gentoo: md`The **gentoo** penguin calls in a variety of ways, but the most frequently heard is a loud trumpeting, which the bird emits with its head thrown back.`, -->
-<!--   } -->
-<!--   return description[input_species] -->
-<!-- } -->
-
-
 ```{webr}
 #| edit: false
 #| echo: false
@@ -145,10 +134,10 @@ fish |>
   )
 ```
 
-We can begin with only two variables where x= length, and y= weight. We can show students a scatter plot of fish length vs. weight for different species of fish. We can then have a discussion about the plot.
+We can begin with only two variables where x = length, and y = weight. We can show students a scatterplot of fish length vs. weight for different species of fish. We can then have a discussion about the plot.
 
-1. “What do you notice about the relationship between length and weight?
-2. “Is the relationship linear? Is it a function?”
+1. What do you notice about the relationship between length and weight?
+2. Is the relationship linear? Is it a function?
 3. "Does the relationship change depending on species? What do you notice is different?"
 
 ### Part 2: Now we can fit a linear model to our scatterplots and discuss what we notice.
@@ -180,11 +169,11 @@ fish |>
 ```
 
 We can then have students examine a linear model and discuss.
-1. “For what species does the linear model accurately represent?”
-2. “What does the slope mean in the context of the problem?”
-3. “What does the y-intercept mean in the context of the problem?”
-4. “Does the y-intercept make logical sense?”
-5. “Does the line fit the model appropriately?”
+1. For what species does the linear model accurately represent?
+2. What does the slope mean in the context of the problem?
+3. What does the y-intercept mean in the context of the problem?
+4. Does the y-intercept make logical sense?
+5. Does the line fit the model appropriately?
 
 ### Part 3: Next, we will examine polynomial trend lines.
 
@@ -216,10 +205,10 @@ fish |>
 
 Next, we can show students a polynomial trend line and discuss.
 
-1. “How does this trend line compare to the linear trend line?”
-2. “Can we predict the length of a fish by using its weight?”
+1. How does this trend line compare to the linear trend line?
+2. Can we predict the length of a fish by using its weight?
 
-## Part 4: Transformed Variables
+### Part 4: Transformed Variables
 
 Students can also explore whether transforming a variable can make the relationship appear more linear. We can create new columns for (Length^2) and (Length^3), and plot the weight against each transformed variable. Students can compare the transformed graphs with the original plot and discuss which model looks more linear.
 
@@ -248,7 +237,9 @@ fish |>
   ) |>
   ggplot(aes(x = Length1_squared, y = Weight)) +
   geom_point() +
-  geom_smooth(method = "lm", se = TRUE,formula = y ~ poly(x, 2)) +
+  geom_smooth(method = "lm", 
+              se = FALSE,
+              formula = y ~ poly(x, 2)) +
   labs(
     title = "Weight vs. Length Squared",
     x = "Length² (cm²)",
@@ -275,7 +266,9 @@ fish |>
   ) |>
   ggplot(aes(x = Length1_cubed, y = Weight)) +
   geom_point() +
-  geom_smooth(method = "lm", se = TRUE, formula = y ~ poly(x, 2)) +
+  geom_smooth(method = "lm", 
+              se = FALSE, 
+              formula = y ~ poly(x, 2)) +
   labs(
     title = "Weight vs. Length Cubed",
     x = "Length³ (cm³)",
@@ -288,9 +281,9 @@ fish |>
 ::::
 
 
-1. “Does plotting weight against (Length^2) or (Length^3) change the pattern?”
-2. “Which graph appears to be the most linear?”
-3. “Does a more linear graph make the predictions easier or more accurate?”
+1. Does plotting weight against (Length^2) or (Length^3) change the pattern?
+2. Which graph appears to be the most linear?
+3. Does a more linear graph make the predictions easier or more accurate?
 4. Take note of which species of fish work well with the two different transformations.
 
 
