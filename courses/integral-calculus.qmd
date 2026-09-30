@@ -1,0 +1,11 @@
+---
+title: "Integral Calculus"
+subtitle: "Accumulation, numerical integration, convergence, and gradient descent"
+---
+
+
+
+## Ethics and equity prompt
+
+Approximation choices can shape conclusions. Ask students when a coarse approximation is acceptable and when it may obscure harm or uncertainty.
+

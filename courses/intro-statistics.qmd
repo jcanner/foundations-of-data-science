@@ -1,0 +1,58 @@
+---
+title: "Introductory Statistics"
+subtitle: "Visualization, cleaning, inference, regression, and prediction"
+---
+
+## Course Description
+
+
+::: {.callout-note collapse="true"}
+### Course Content
+
+
+:::
+
+::: {.callout-note collapse="true"}
+### Course Objectives
+
+Upon successful completion of the course, students will be able to:
+
+
+:::
+
+
+## Connections to Data Science: 
+
+## Goals
+
+
+## Activities
+
+### Introduction
+
+
+
+
+
+
+
+
+
+
+
+
+## Ethics and Equity prompt
+
+Data cleaning is not neutral. Ask students to document every cleaning decision and explain how each decision could affect conclusions.
+
+
+
+## Resources
+
+### Textbooks
+
+
+### Tutorials
+
+
+### Additional Lesson Plans and Activities

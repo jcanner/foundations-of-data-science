@@ -1,0 +1,10 @@
+---
+title: "Linear Algebra"
+subtitle: "Vectors, dot products, cosine similarity, clustering, PCA/SVD"
+---
+
+
+
+## Ethics and equity prompt
+
+Similarity measures are design choices. Ask students how scaling, variable selection, and missing context can change who is considered similar to whom.

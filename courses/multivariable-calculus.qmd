@@ -1,0 +1,145 @@
+---
+title: "Multivariable Calculus"
+subtitle: "Partial derivatives, gradients, contours, and gradient descent"
+---
+
+## Course Description
+
+Vector valued functions, calculus of functions of more than one
+variable, partial derivatives, multiple integration, Green’s Theorem,
+Stokes’ Theorem, divergence theorem.
+
+::: {.callout-note collapse="true"}
+### Course Content
+
+1.  Vectors and vector operations in two and three dimensions;
+
+2.  Vector and parametric equations of lines and planes; rectangular
+    equation of a plane;
+
+3.  Dot, cross, and triple products and projections;
+
+4.  Differentiability and differentiation including partial derivatives,
+    chain rule, higher-order derivatives, directional derivatives, and
+    the gradient;
+
+5.  Arc length and curvature; tangent, normal, binormal vectors;
+
+6.  Vector-valued functions and their derivatives and integrals; finding
+    velocity and acceleration;
+
+7.  Real-valued functions of several variables, level curves and
+    surfaces;
+
+8.  Limits, continuity, and properties of limits and continuity;
+
+9.  Local and global maxima and minima extrema, saddle points, and
+    Lagrange multipliers;
+
+10. Vector fields including the gradient vector field and conservative
+    fields;
+
+11. Double and triple integrals;
+
+12. Applications of multiple integration such as area, volume, center of
+    mass, or moments of inertia;
+
+13. Change of variables theorem;
+
+14. Integrals in polar, cylindrical, and spherical coordinates;
+
+15. Line and surface integrals including parametrically defined
+    surfaces;
+
+16. Integrals of real-valued functions over surfaces;
+
+17. Divergence and curl; and
+
+18. Green’s, Stokes’, and divergence theorems.
+:::
+
+::: {.callout-note collapse="true"}
+### Course Objectives
+
+Upon successful completion of the course, students will be able to:
+
+1.  Perform vector operations;
+
+2.  Determine equations of lines and planes;
+
+3.  Find the limit of a function at a point;
+
+4.  Evaluate derivatives;
+
+5.  Write the equation of a tangent plane at a point;
+
+6.  Determine differentiability;
+
+7.  Find local extrema and test for saddle points;
+
+8.  Solve constraint problems using Lagrange multipliers;
+
+9.  Compute arc length;
+
+10. Find the divergence and curl of a vector field;
+
+11. Evaluate two and three dimensional integrals; and
+
+12. Apply Green’s, Stokes’, and divergence theorems.
+:::
+
+
+## Connections to Data Science: Gradient Descent
+
+**Partial derivatives** connect directly to gradient descent through the gradient vector, which collects the rate of change of a multivariable function in each coordinate direction. Because the gradient points toward steepest ascent, its negative identifies the locally steepest direction of decrease; gradient descent follows this direction iteratively to approximate a local minimum. In data science and AI, this method is used to minimize loss functions defined over high-dimensional parameter spaces, providing the mathematical mechanism behind fitting regression models, training neural networks, and optimizing other learning systems.
+
+
+## Goals
+
+
+## Activities
+
+### Introduction
+
+
+
+
+
+
+
+
+
+
+## Ethics and equity prompt
+
+Optimization requires an objective. 
+
+Ask: what did we choose to optimize, what did we leave out, and who might be affected by that choice?
+
+
+
+
+
+
+
+## Resources
+
+### Textbooks
+
+- [Essential Math for AI: Chapter 4. Optimization for Neural Networks](https://www.oreilly.com/library/view/essential-math-for/9781098107628/ch04.html#idm44895121768032)  
+
+- [Essential Math for Data Science: Chapter 5. Linear Regression - Gradient Descent](https://www.oreilly.com/library/view/essential-math-for/9781098102920/ch05.html)
+
+- [Multivariable Calculus in the Age of AI](https://wanghemath.github.io/Book-CalculusMulti/chapters/chapter-25-multivariable-calculus-for-data-science-and-machine-learning.html)
+
+### Tutorials
+
+- [Khan Academy: Multivariable Calculus > Unit 3 > Lesson 4 > Gradient Descent](https://www.khanacademy.org/math/multivariable-calculus/applications-of-multivariable-derivatives/optimizing-multivariable-functions/a/what-is-gradient-descent)
+
+- [Learn-Co: Gradient Descent in 3D](https://github.com/learn-co-students/multivariable-calculus-gradient-descent-ds-apply-000)
+
+### Lesson Plans and Activities
+
+- [JHU Calculus III Project - Gradient Descent](https://math.jhu.edu/~vzakhar2/teaching/spring2021/gradient_descent.pdf)
+
+- [CogWorks - Multivariable Calculus: Partial Derivatives & Gradients](https://rsokl.github.io/CogWeb/Math_Materials/Multivariable_Calculus.html)

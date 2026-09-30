@@ -31,8 +31,8 @@
     "objectID": "precalculus.html#additional-resources",
     "href": "precalculus.html#additional-resources",
     "title": "PreCalculus",
-    "section": "8 Additional Resources",
-    "text": "8 Additional Resources"
+    "section": "7 Additional Resources",
+    "text": "7 Additional Resources"
   },
   {
     "objectID": "about.html",
@@ -60,7 +60,7 @@
     "href": "precalculus.html#goals",
     "title": "PreCalculus",
     "section": "3 Goals",
-    "text": "3 Goals\n\nExplain how functions can be introduced as models of data.\nConnect the idea of “input”/”output” to explanatory/response variables.\nUse real data sets (fish data set) to compare different function models.\nDiscuss limitations of using mathematical models for predictions."
+    "text": "3 Goals\n\nExplain how functions can be introduced as models of data.\nConnect the idea of input/output to explanatory/response variables.\nUse real data sets (fish data set) to compare different function models.\nDiscuss limitations of using mathematical models for predictions."
   },
   {
     "objectID": "precalculus.html#lesson",
@@ -74,20 +74,160 @@
     "href": "precalculus.html#activity",
     "title": "PreCalculus",
     "section": "5 Activity",
-    "text": "5 Activity\n\n5.1 Part 1: Which function fits the fish?\nStudents compare linear, quadratic, power, and exponential models for predicting fish weight from length. Instructors discuss how visual fit, residual plots, and context guide model choice.\nCan we estimate the weight of a fish based on its other physical features?\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nviewof input_species = Inputs.select([\"Perch\", \"Bream\", \"Roach\", \"Pike\", \"Smelt\", \"Parkki\", \"Whitefish\"])\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nWe can begin with only two variables where x= length, and y= weight. We can show students a scatter plot of fish length vs. weight for different species of fish. We can then have a discussion about the plot.\n\n“What do you notice about the relationship between length and weight?\n“Is the relationship linear? Is it a function?”\n“Does the relationship change depending on species? What do you notice is different?”\n\n\n\n5.2 Part 2: Now we can fit a linear model to our scatterplots and discuss what we notice.\n\nviewof input_species2 = Inputs.select([\"Perch\", \"Bream\", \"Roach\", \"Pike\", \"Smelt\", \"Parkki\", \"Whitefish\"])\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nWe can then have students examine a linear model and discuss. 1. “For what species does the linear model accurately represent?” 2. “What does the slope mean in the context of the problem?” 3. “What does the y-intercept mean in the context of the problem?” 4. “Does the y-intercept make logical sense?” 5. “Does the line fit the model appropriately?”\n\n\n5.3 Part 3: Next, we will examine polynomial trend lines.\n\nviewof input_species3 = Inputs.select([\"Perch\", \"Bream\", \"Roach\", \"Pike\", \"Smelt\", \"Parkki\", \"Whitefish\"])\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNext, we can show students a polynomial trend line and discuss.\n\n“How does this trend line compare to the linear trend line?”\n“Can we predict the length of a fish by using its weight?”"
+    "text": "5 Activity\n\n5.1 Part 1: Which function fits the fish?\nStudents compare linear, quadratic, power, and exponential models for predicting fish weight from length. Instructors discuss how visual fit, residual plots, and context guide model choice.\nCan we estimate the weight of a fish based on its other physical features?\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nviewof input_species = Inputs.select([\"Perch\", \"Bream\", \"Roach\", \"Pike\", \"Smelt\", \"Parkki\", \"Whitefish\"])\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nWe can begin with only two variables where x = length, and y = weight. We can show students a scatterplot of fish length vs. weight for different species of fish. We can then have a discussion about the plot.\n\nWhat do you notice about the relationship between length and weight?\nIs the relationship linear? Is it a function?\n“Does the relationship change depending on species? What do you notice is different?”\n\n\n\n5.2 Part 2: Now we can fit a linear model to our scatterplots and discuss what we notice.\n\nviewof input_species2 = Inputs.select([\"Perch\", \"Bream\", \"Roach\", \"Pike\", \"Smelt\", \"Parkki\", \"Whitefish\"])\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nWe can then have students examine a linear model and discuss. 1. For what species does the linear model accurately represent? 2. What does the slope mean in the context of the problem? 3. What does the y-intercept mean in the context of the problem? 4. Does the y-intercept make logical sense? 5. Does the line fit the model appropriately?\n\n\n5.3 Part 3: Next, we will examine polynomial trend lines.\n\nviewof input_species3 = Inputs.select([\"Perch\", \"Bream\", \"Roach\", \"Pike\", \"Smelt\", \"Parkki\", \"Whitefish\"])\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNext, we can show students a polynomial trend line and discuss.\n\nHow does this trend line compare to the linear trend line?\nCan we predict the length of a fish by using its weight?\n\n\n\n5.4 Part 4: Transformed Variables\nStudents can also explore whether transforming a variable can make the relationship appear more linear. We can create new columns for (Length^2) and (Length^3), and plot the weight against each transformed variable. Students can compare the transformed graphs with the original plot and discuss which model looks more linear.\n\nviewof input_species4 = Inputs.select([\"Perch\", \"Bream\", \"Roach\", \"Pike\", \"Smelt\", \"Parkki\", \"Whitefish\"])\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nDoes plotting weight against (Length^2) or (Length^3) change the pattern?\nWhich graph appears to be the most linear?\nDoes a more linear graph make the predictions easier or more accurate?\nTake note of which species of fish work well with the two different transformations.\n\n\n\n5.5 Activity 2: Domain, range, and model misuse\nStudents identify the observed range of lengths and predict weights inside and outside that range. They label predictions as interpolation or extrapolation and explain why extrapolation can be misleading."
   },
   {
     "objectID": "precalculus.html#part-4-transformed-variables",
     "href": "precalculus.html#part-4-transformed-variables",
     "title": "PreCalculus",
     "section": "6 Part 4: Transformed Variables",
-    "text": "6 Part 4: Transformed Variables\nStudents can also explore whether transforming a variable can make the relationship appear more linear. We can create new columns for (Length^2) and (Length^3), and plot the weight against each transformed variable. Students can compare the transformed graphs with the original plot and discuss which model looks more linear.\n\nviewof input_species4 = Inputs.select([\"Perch\", \"Bream\", \"Roach\", \"Pike\", \"Smelt\", \"Parkki\", \"Whitefish\"])\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n“Does plotting weight against (Length^2) or (Length^3) change the pattern?”\n“Which graph appears to be the most linear?”\n“Does a more linear graph make the predictions easier or more accurate?”\nTake note of which species of fish work well with the two different transformations.\n\n\n6.1 Activity 2: Domain, range, and model misuse\nStudents identify the observed range of lengths and predict weights inside and outside that range. They label predictions as interpolation or extrapolation and explain why extrapolation can be misleading."
+    "text": "6 Part 4: Transformed Variables\nStudents can also explore whether transforming a variable can make the relationship appear more linear. We can create new columns for (Length^2) and (Length^3), and plot the weight against each transformed variable. Students can compare the transformed graphs with the original plot and discuss which model looks more linear.\n\nviewof input_species4 = Inputs.select([\"Perch\", \"Bream\", \"Roach\", \"Pike\", \"Smelt\", \"Parkki\", \"Whitefish\"])\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nDoes plotting weight against (Length^2) or (Length^3) change the pattern?\nWhich graph appears to be the most linear?\nDoes a more linear graph make the predictions easier or more accurate?\nTake note of which species of fish work well with the two different transformations.\n\n\n6.1 Activity 2: Domain, range, and model misuse\nStudents identify the observed range of lengths and predict weights inside and outside that range. They label predictions as interpolation or extrapolation and explain why extrapolation can be misleading."
   },
   {
     "objectID": "precalculus.html#conclusion",
     "href": "precalculus.html#conclusion",
     "title": "PreCalculus",
-    "section": "7 Conclusion",
-    "text": "7 Conclusion\nAfter this lesson, students should now understand that functions can model relationships in the real world, and help us make predictions. Linear and quadratic models are simple examples of the types of models that can be used with machine learning. However, not all models are good models and are only approximations, so they may not always be accurate or make sense outside of the context of our data."
+    "section": "6 Conclusion",
+    "text": "6 Conclusion\nAfter this lesson, students should now understand that functions can model relationships in the real world, and help us make predictions. Linear and quadratic models are simple examples of the types of models that can be used with machine learning. However, not all models are good models and are only approximations, so they may not always be accurate or make sense outside of the context of our data."
+  },
+  {
+    "objectID": "courses/multivariable-calculus.html",
+    "href": "courses/multivariable-calculus.html",
+    "title": "Multivariable Calculus",
+    "section": "",
+    "text": "Vector valued functions, calculus of functions of more than one variable, partial derivatives, multiple integration, Green’s Theorem, Stokes’ Theorem, divergence theorem.\n\n\n\n\n\n\nNoteCourse Content\n\n\n\n\n\n\nVectors and vector operations in two and three dimensions;\nVector and parametric equations of lines and planes; rectangular equation of a plane;\nDot, cross, and triple products and projections;\nDifferentiability and differentiation including partial derivatives, chain rule, higher-order derivatives, directional derivatives, and the gradient;\nArc length and curvature; tangent, normal, binormal vectors;\nVector-valued functions and their derivatives and integrals; finding velocity and acceleration;\nReal-valued functions of several variables, level curves and surfaces;\nLimits, continuity, and properties of limits and continuity;\nLocal and global maxima and minima extrema, saddle points, and Lagrange multipliers;\nVector fields including the gradient vector field and conservative fields;\nDouble and triple integrals;\nApplications of multiple integration such as area, volume, center of mass, or moments of inertia;\nChange of variables theorem;\nIntegrals in polar, cylindrical, and spherical coordinates;\nLine and surface integrals including parametrically defined surfaces;\nIntegrals of real-valued functions over surfaces;\nDivergence and curl; and\nGreen’s, Stokes’, and divergence theorems.\n\n\n\n\n\n\n\n\n\n\nNoteCourse Objectives\n\n\n\n\n\nUpon successful completion of the course, students will be able to:\n\nPerform vector operations;\nDetermine equations of lines and planes;\nFind the limit of a function at a point;\nEvaluate derivatives;\nWrite the equation of a tangent plane at a point;\nDetermine differentiability;\nFind local extrema and test for saddle points;\nSolve constraint problems using Lagrange multipliers;\nCompute arc length;\nFind the divergence and curl of a vector field;\nEvaluate two and three dimensional integrals; and\nApply Green’s, Stokes’, and divergence theorems."
+  },
+  {
+    "objectID": "courses/multivariable-calculus.html#course-description",
+    "href": "courses/multivariable-calculus.html#course-description",
+    "title": "Multivariable Calculus",
+    "section": "",
+    "text": "Vector valued functions, calculus of functions of more than one variable, partial derivatives, multiple integration, Green’s Theorem, Stokes’ Theorem, divergence theorem.\n\n\n\n\n\n\nNoteCourse Content\n\n\n\n\n\n\nVectors and vector operations in two and three dimensions;\nVector and parametric equations of lines and planes; rectangular equation of a plane;\nDot, cross, and triple products and projections;\nDifferentiability and differentiation including partial derivatives, chain rule, higher-order derivatives, directional derivatives, and the gradient;\nArc length and curvature; tangent, normal, binormal vectors;\nVector-valued functions and their derivatives and integrals; finding velocity and acceleration;\nReal-valued functions of several variables, level curves and surfaces;\nLimits, continuity, and properties of limits and continuity;\nLocal and global maxima and minima extrema, saddle points, and Lagrange multipliers;\nVector fields including the gradient vector field and conservative fields;\nDouble and triple integrals;\nApplications of multiple integration such as area, volume, center of mass, or moments of inertia;\nChange of variables theorem;\nIntegrals in polar, cylindrical, and spherical coordinates;\nLine and surface integrals including parametrically defined surfaces;\nIntegrals of real-valued functions over surfaces;\nDivergence and curl; and\nGreen’s, Stokes’, and divergence theorems.\n\n\n\n\n\n\n\n\n\n\nNoteCourse Objectives\n\n\n\n\n\nUpon successful completion of the course, students will be able to:\n\nPerform vector operations;\nDetermine equations of lines and planes;\nFind the limit of a function at a point;\nEvaluate derivatives;\nWrite the equation of a tangent plane at a point;\nDetermine differentiability;\nFind local extrema and test for saddle points;\nSolve constraint problems using Lagrange multipliers;\nCompute arc length;\nFind the divergence and curl of a vector field;\nEvaluate two and three dimensional integrals; and\nApply Green’s, Stokes’, and divergence theorems."
+  },
+  {
+    "objectID": "courses/multivariable-calculus.html#connections-to-data-science-gradient-descent",
+    "href": "courses/multivariable-calculus.html#connections-to-data-science-gradient-descent",
+    "title": "Multivariable Calculus",
+    "section": "Connections to Data Science: Gradient Descent",
+    "text": "Connections to Data Science: Gradient Descent\nPartial derivatives connect directly to gradient descent through the gradient vector, which collects the rate of change of a multivariable function in each coordinate direction. Because the gradient points toward steepest ascent, its negative identifies the locally steepest direction of decrease; gradient descent follows this direction iteratively to approximate a local minimum. In data science and AI, this method is used to minimize loss functions defined over high-dimensional parameter spaces, providing the mathematical mechanism behind fitting regression models, training neural networks, and optimizing other learning systems."
+  },
+  {
+    "objectID": "courses/multivariable-calculus.html#goals",
+    "href": "courses/multivariable-calculus.html#goals",
+    "title": "Multivariable Calculus",
+    "section": "Goals",
+    "text": "Goals"
+  },
+  {
+    "objectID": "courses/multivariable-calculus.html#activities",
+    "href": "courses/multivariable-calculus.html#activities",
+    "title": "Multivariable Calculus",
+    "section": "Activities",
+    "text": "Activities\n\nIntroduction"
+  },
+  {
+    "objectID": "courses/multivariable-calculus.html#ethics-and-equity-prompt",
+    "href": "courses/multivariable-calculus.html#ethics-and-equity-prompt",
+    "title": "Multivariable Calculus",
+    "section": "Ethics and equity prompt",
+    "text": "Ethics and equity prompt\nOptimization requires an objective.\nAsk: what did we choose to optimize, what did we leave out, and who might be affected by that choice?"
+  },
+  {
+    "objectID": "courses/multivariable-calculus.html#resources",
+    "href": "courses/multivariable-calculus.html#resources",
+    "title": "Multivariable Calculus",
+    "section": "Resources",
+    "text": "Resources\n\nTextbooks\n\nEssential Math for AI: Chapter 4. Optimization for Neural Networks\nEssential Math for Data Science: Chapter 5. Linear Regression - Gradient Descent\nMultivariable Calculus in the Age of AI\n\n\n\nTutorials\n\nKhan Academy: Multivariable Calculus &gt; Unit 3 &gt; Lesson 4 &gt; Gradient Descent\nLearn-Co: Gradient Descent in 3D\n\n\n\nLesson Plans and Activities\n\nJHU Calculus III Project - Gradient Descent\nCogWorks - Multivariable Calculus: Partial Derivatives & Gradients"
+  },
+  {
+    "objectID": "courses/intro-statistics.html",
+    "href": "courses/intro-statistics.html",
+    "title": "Introductory Statistics",
+    "section": "",
+    "text": "NoteCourse Content\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNoteCourse Objectives\n\n\n\n\n\nUpon successful completion of the course, students will be able to:"
+  },
+  {
+    "objectID": "courses/intro-statistics.html#course-description",
+    "href": "courses/intro-statistics.html#course-description",
+    "title": "Introductory Statistics",
+    "section": "",
+    "text": "NoteCourse Content\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNoteCourse Objectives\n\n\n\n\n\nUpon successful completion of the course, students will be able to:"
+  },
+  {
+    "objectID": "courses/intro-statistics.html#connections-to-data-science",
+    "href": "courses/intro-statistics.html#connections-to-data-science",
+    "title": "Introductory Statistics",
+    "section": "Connections to Data Science:",
+    "text": "Connections to Data Science:"
+  },
+  {
+    "objectID": "courses/intro-statistics.html#goals",
+    "href": "courses/intro-statistics.html#goals",
+    "title": "Introductory Statistics",
+    "section": "Goals",
+    "text": "Goals"
+  },
+  {
+    "objectID": "courses/intro-statistics.html#activities",
+    "href": "courses/intro-statistics.html#activities",
+    "title": "Introductory Statistics",
+    "section": "Activities",
+    "text": "Activities\n\nIntroduction"
+  },
+  {
+    "objectID": "courses/intro-statistics.html#ethics-and-equity-prompt",
+    "href": "courses/intro-statistics.html#ethics-and-equity-prompt",
+    "title": "Introductory Statistics",
+    "section": "Ethics and Equity prompt",
+    "text": "Ethics and Equity prompt\nData cleaning is not neutral. Ask students to document every cleaning decision and explain how each decision could affect conclusions."
+  },
+  {
+    "objectID": "courses/intro-statistics.html#resources",
+    "href": "courses/intro-statistics.html#resources",
+    "title": "Introductory Statistics",
+    "section": "Resources",
+    "text": "Resources\n\nTextbooks\n\n\nTutorials\n\n\nAdditional Lesson Plans and Activities"
+  },
+  {
+    "objectID": "courses/differential-calculus.html",
+    "href": "courses/differential-calculus.html",
+    "title": "Differential Calculus",
+    "section": "",
+    "text": "A small average error can hide systematic errors for subgroups. Ask students to compare residuals by species or another group variable and discuss fairness in predictive performance."
+  },
+  {
+    "objectID": "courses/differential-calculus.html#ethics-and-equity-prompt",
+    "href": "courses/differential-calculus.html#ethics-and-equity-prompt",
+    "title": "Differential Calculus",
+    "section": "",
+    "text": "A small average error can hide systematic errors for subgroups. Ask students to compare residuals by species or another group variable and discuss fairness in predictive performance."
+  },
+  {
+    "objectID": "courses/integral-calculus.html",
+    "href": "courses/integral-calculus.html",
+    "title": "Integral Calculus",
+    "section": "",
+    "text": "Approximation choices can shape conclusions. Ask students when a coarse approximation is acceptable and when it may obscure harm or uncertainty."
+  },
+  {
+    "objectID": "courses/integral-calculus.html#ethics-and-equity-prompt",
+    "href": "courses/integral-calculus.html#ethics-and-equity-prompt",
+    "title": "Integral Calculus",
+    "section": "",
+    "text": "Approximation choices can shape conclusions. Ask students when a coarse approximation is acceptable and when it may obscure harm or uncertainty."
+  },
+  {
+    "objectID": "courses/linear-algebra.html",
+    "href": "courses/linear-algebra.html",
+    "title": "Linear Algebra",
+    "section": "",
+    "text": "Similarity measures are design choices. Ask students how scaling, variable selection, and missing context can change who is considered similar to whom."
+  },
+  {
+    "objectID": "courses/linear-algebra.html#ethics-and-equity-prompt",
+    "href": "courses/linear-algebra.html#ethics-and-equity-prompt",
+    "title": "Linear Algebra",
+    "section": "",
+    "text": "Similarity measures are design choices. Ask students how scaling, variable selection, and missing context can change who is considered similar to whom."
   }
 ]

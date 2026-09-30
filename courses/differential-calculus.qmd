@@ -1,0 +1,11 @@
+---
+title: "Differential Calculus"
+subtitle: "Residuals, loss functions, derivatives, and optimization"
+---
+
+
+
+## Ethics and equity prompt
+
+A small average error can hide systematic errors for subgroups. Ask students to compare residuals by species or another group variable and discuss fairness in predictive performance.
+
