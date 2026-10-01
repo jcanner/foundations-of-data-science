@@ -3,9 +3,55 @@ title: "Differential Calculus"
 subtitle: "Residuals, loss functions, derivatives, and optimization"
 ---
 
+## Course Description
 
 
-## Ethics and equity prompt
+::: {.callout-note collapse="true"}
+### Course Content
+
+
+:::
+
+::: {.callout-note collapse="true"}
+### Course Objectives
+
+Upon successful completion of the course, students will be able to:
+
+
+:::
+
+
+## Connections to Data Science: 
+
+## Goals
+
+
+## Activities
+
+### Introduction
+
+
+
+
+
+
+
+## Ethics and Equity Prompt
 
 A small average error can hide systematic errors for subgroups. Ask students to compare residuals by species or another group variable and discuss fairness in predictive performance.
+
+
+
+
+
+## Resources
+
+### Textbooks
+
+
+### Tutorials
+
+
+### Additional Lesson Plans and Activities
+
 

@@ -3,8 +3,58 @@ title: "Linear Algebra"
 subtitle: "Vectors, dot products, cosine similarity, clustering, PCA/SVD"
 ---
 
+## Course Description
 
 
-## Ethics and equity prompt
+::: {.callout-note collapse="true"}
+### Course Content
+
+
+:::
+
+::: {.callout-note collapse="true"}
+### Course Objectives
+
+Upon successful completion of the course, students will be able to:
+
+
+:::
+
+
+## Connections to Data Science: 
+
+## Goals
+
+
+## Activities
+
+### Introduction
+
+
+
+
+
+
+
+
+
+
+
+
+## Ethics and Equity Prompt
 
 Similarity measures are design choices. Ask students how scaling, variable selection, and missing context can change who is considered similar to whom.
+
+
+
+## Resources
+
+### Textbooks
+
+
+### Tutorials
+
+
+### Additional Lesson Plans and Activities
+
+

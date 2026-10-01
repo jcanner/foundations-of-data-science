@@ -2,10 +2,60 @@
 title: "Integral Calculus"
 subtitle: "Accumulation, numerical integration, convergence, and gradient descent"
 ---
+## Course Description
+
+
+::: {.callout-note collapse="true"}
+### Course Content
+
+
+:::
+
+::: {.callout-note collapse="true"}
+### Course Objectives
+
+Upon successful completion of the course, students will be able to:
+
+
+:::
+
+
+## Connections to Data Science: 
+
+## Goals
+
+
+## Activities
+
+### Introduction
 
 
 
-## Ethics and equity prompt
+
+
+
+
+
+
+
+
+
+## Ethics and Equity Prompt
 
 Approximation choices can shape conclusions. Ask students when a coarse approximation is acceptable and when it may obscure harm or uncertainty.
+
+
+
+## Resources
+
+### Textbooks
+
+
+### Tutorials
+
+
+### Additional Lesson Plans and Activities
+
+
+
 
