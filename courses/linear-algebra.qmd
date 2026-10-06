@@ -1,15 +1,34 @@
 ---
-title: "Linear Algebra"
+title: "Introduction to Linear Algebra"
 subtitle: "Vectors, dot products, cosine similarity, clustering, PCA/SVD"
 ---
 
 ## Course Description
 
+This course develops the techniques and theory needed to solve and classify systems of linear equations. Solution techniques include row operations, Gaussian elimination, and matrix algebra. Investigates the properties of vectors in two and three dimensions, leading to the notion of an abstract vector space. Vector space and matrix theory are presented including topics such as inner products, norms, orthogonality, eigenvalues, eigenspaces, and linear transformations. Selected applications of linear algebra are included.
 
 ::: {.callout-note collapse="true"}
 ### Course Content
 
-
+1.  Techniques for solving systems of linear equations including Gaussian and Gauss-Jordan elimination and inverse matrices;
+2.  Matrix algebra, invertibility, and the transpose;
+3.  Relationship between coefficient matrix invertibility and solutions to a system of linear equations and the inverse matrices;
+4.  Special matrices: diagonal, triangular, and symmetric;
+5.  Determinants and their properties;
+6.  Vector algebra for Rn;
+7.  Real vector space and subspaces;
+8.  Linear independence and dependence;
+9.  Basis and dimension of a vector space;
+10. Matrix-generated spaces: row space, column space, null space, rank, nullity;
+11. Change of basis;
+12. Linear transformations, kernel and range, and inverse linear transformations;
+13. Matrices of general linear transformations;
+14. Eigenvalues, eigenvectors, eigenspace;
+15. Diagonalization including orthogonal diagonalization of symmetric matrices;
+16. Inner products on a real vector space;
+17. Dot product, norm of a vector, angle between vectors, orthogonality of two vectors in Rn;
+18. Angle and orthogonality in inner product spaces; and
+19. Orthogonal and orthonormal bases: Gram-Schmidt process.
 :::
 
 ::: {.callout-note collapse="true"}
@@ -17,44 +36,34 @@ subtitle: "Vectors, dot products, cosine similarity, clustering, PCA/SVD"
 
 Upon successful completion of the course, students will be able to:
 
-
+1.  Find solutions of systems of equations using various methods appropriate to lower division linear algebra;
+2.  Use bases and orthonormal bases to solve problems in linear algebra;
+3.  Find the dimension of spaces such as those associated with matrices and linear transformations;
+4.  Find eigenvalues and eigenvectors and use them in applications; and
+5.  Prove basic results in linear algebra using appropriate proof-writing techniques such as linear independence of vectors; properties of subspaces; linearity, injectivity and surjectivity of functions; and properties of eigenvectors and eigenvalues.
 :::
 
-
-## Connections to Data Science: 
+## Connections to Data Science: Correlation, Clustering, and PCA
+Linear algebra helps us represent and understand data using vectors, matrices, and geometric relationships. Correlation measures how two variables change together, and concepts such as dot products, centering, and normalization help us interpret that relationship. Clustering uses distances between data points to group observations that are similar, so students can connect geometric ideas about length and distance to the process of finding meaningful groups in a dataset. Singular value decomposition (SVD) then provides a way to break a matrix into simpler components that describe its most important patterns. Principal component analysis (PCA) uses these ideas to find new directions—called principal components—that capture the greatest variation in the data. Together, correlation, clustering, and SVD/PCA show how the basic tools of linear algebra can be used to measure similarity, discover structure, reduce complexity, and visualize high-dimensional data.
 
 ## Goals
-
 
 ## Activities
 
 ### Introduction
 
-
-
-
-
-
-
-
-
-
-
-
 ## Ethics and Equity Prompt
 
 Similarity measures are design choices. Ask students how scaling, variable selection, and missing context can change who is considered similar to whom.
-
-
 
 ## Resources
 
 ### Textbooks
 
+- [Practical Linear Algebra for Data Science](https://www.oreilly.com/library/view/practical-linear-algebra/9781098120603/)  
+
+- [Essential Math for Data Science: Chapter 4. Linear Algebra](https://www.oreilly.com/library/view/essential-math-for/9781098102920/ch04.html)
 
 ### Tutorials
 
-
 ### Additional Lesson Plans and Activities
-
-
