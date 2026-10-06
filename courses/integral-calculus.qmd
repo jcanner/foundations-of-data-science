@@ -2,60 +2,61 @@
 title: "Integral Calculus"
 subtitle: "Accumulation, numerical integration, convergence, and gradient descent"
 ---
+
 ## Course Description
 
+A second course in differential and integral calculus of a single variable: integration; techniques of integration; infinite sequences and series; polar and parametric equations; applications of integration.
 
 ::: {.callout-note collapse="true"}
 ### Course Content
 
-
+1.  Areas between curves;
+2.  Volume, volume of a solid of revolution;
+3.  Additional techniques of integration including integration by parts and trigonometric substitution;
+4.  Numerical integration; trapezoidal and Simpson's rule;
+5.  Improper integrals;
+6.  Applications of integration to areas and volumes;
+7.  Additional applications such as work, arc length, area of a surface of revolution, moments and centers of mass, separable differential equations, growth and decay;
+8.  Introduction to sequences and series;
+9.  Multiple tests for convergence of sequences and series; 
+10. Power series, radius of convergence, interval of convergence;
+11. Differentiation and integration of power series;
+12. Taylor series expansion of functions;
+13. Parametric equations and calculus with parametric curves; and
+14. Polar curves and calculus in polar coordinates;
 :::
 
 ::: {.callout-note collapse="true"}
 ### Course Objectives
-
 Upon successful completion of the course, students will be able to:
 
-
+1.  Evaluate indeterminate forms using L'Hopital's Rule;
+2.  Find derivatives of transcendental functions;
+3.  Evaluate definite and indefinite integrals using a variety of integration formulas and techniques;
+4.  Apply integration to areas and volumes, and other applications such as work or length of a curve;
+5.  Evaluate improper integrals;
+6.  Apply convergence tests to sequences and series;
+7.  Represent functions as power series; and
+8.  Graph, differentiate and integrate functions in polar and parametric form.
 :::
 
-
-## Connections to Data Science: 
+## Connections to Data Science: Probability Theory and Convergence
+Integral calculus helps us understand how quantities accumulate, which makes it useful for both probability and optimization. In gradient descent, ideas such as convexity and convergence can be introduced in a simple way: convex functions have a bowl-like shape, and when the steps are chosen appropriately, repeatedly moving downhill can bring us closer to a minimum. Integrals also allow us to find the total area under probability distributions, which must equal 1 because it represents the total probability. For example, exponential, Gamma, and Beta distributions can be integrated analytically to study probabilities and expected values. The normal distribution is different: its total area and probabilities cannot be expressed using an elementary antiderivative, so we approximate them numerically. This provides a natural connection between integration techniques and the numerical methods used in statistics, data science, and machine learning.
 
 ## Goals
-
 
 ## Activities
 
 ### Introduction
 
-
-
-
-
-
-
-
-
-
-
-
 ## Ethics and Equity Prompt
 
 Approximation choices can shape conclusions. Ask students when a coarse approximation is acceptable and when it may obscure harm or uncertainty.
-
-
 
 ## Resources
 
 ### Textbooks
 
-
 ### Tutorials
 
-
 ### Additional Lesson Plans and Activities
-
-
-
-
