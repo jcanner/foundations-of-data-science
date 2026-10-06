@@ -5,11 +5,29 @@ subtitle: "Residuals, loss functions, derivatives, and optimization"
 
 ## Course Description
 
+A first course in differential and integral calculus of a single variable: functions; limits and continuity; techniques and applications of differentiation and integration; Fundamental Theorem of Calculus.
 
 ::: {.callout-note collapse="true"}
 ### Course Content
 
-
+1.  Definition and computation of limits using numerical, graphical, and algebraic approaches;
+2.  Continuity and differentiability of functions;
+3.  Derivative as a limit;
+4.  Interpretation of the derivative as: slope of tangent line, a rate of change;
+5.  Differentiation formulas: constants, power rule, product rule, quotient rule and chain rule;
+6.  Derivatives of transcendental functions such as trigonometric, exponential or logarithmic;
+7.  Implicit differentiation with applications, and differentiation of inverse functions;
+8.  Higher-order derivatives;
+9.  Graphing functions using first and second derivatives, concavity and asymptotes;
+10. Maximum and minimum values, and optimization;
+11. Mean Value Theorem;
+12. Antiderivatives and indefinite integrals;
+13. Area under a curve;
+14. Definite integral; Riemann sum;
+15. Properties of the integral;
+16. Fundamental Theorem of Calculus;
+17. Integration by substitution;
+18. Indeterminate forms and L'Hopital's Rule;
 :::
 
 ::: {.callout-note collapse="true"}
@@ -17,41 +35,39 @@ subtitle: "Residuals, loss functions, derivatives, and optimization"
 
 Upon successful completion of the course, students will be able to:
 
-
+1.  Compute the limit of a function at a real number;
+2.  Determine if a function is continuous at a real number;
+3.  Find the derivative of a function as a limit;
+4.  Find the equation of a tangent line to a function;
+5.  Compute derivatives using differentiation formulas;
+6.  Use differentiation to solve applications such as related rate problems and optimization problems;
+7.  Use implicit differentiation;
+8.  Graph functions using methods of calculus;
+9.  Evaluate a definite integral as a limit;
+10. Evaluate integrals using the Fundamental Theorem of Calculus; and
+11. Use the definite integral to find areas and volumes
 :::
 
+## Connections to Data Science: Loss Functions and Optimization
+Differential calculus helps us understand how a model can improve its predictions. A loss function measures the difference between a predicted value and the true value. We can measure this difference using absolute distance or squared distance; in linear regression, we commonly use the mean squared error, which averages the squared differences. The shape of the loss function matters: absolute-value loss has a sharp, pointy place where the derivative is not defined, while squared-error loss is smooth and easier to work with using calculus. Optimization is the process of finding the input values that make a function as small as possible. We begin with simple one-variable examples, where derivatives help us find minimum points, and then apply the same ideas to more complicated expressions involving vectors and matrices. Depending on its shape, a function may have one clear minimum, as in a convex landscape, or several possible low points, as in a nonconvex landscape. These ideas allow us to use calculus to minimize the mean squared error and find the line that best fits a set of data.
 
-## Connections to Data Science: 
 
 ## Goals
-
 
 ## Activities
 
 ### Introduction
 
-
-
-
-
-
-
 ## Ethics and Equity Prompt
 
-A small average error can hide systematic errors for subgroups. Ask students to compare residuals by species or another group variable and discuss fairness in predictive performance.
-
-
-
-
+A small average error can hide systematic errors for subgroups. Ask students to compare residuals by subgroups in the data and discuss fairness in predictive performance.
 
 ## Resources
 
 ### Textbooks
 
+- [Essential Math for AI: Chapter 3. Fitting Functions to Data](https://learning.oreilly.com/library/view/essential-math-for/9781098107628/ch03.html#idm44895118162528)
 
 ### Tutorials
 
-
 ### Additional Lesson Plans and Activities
-
-
