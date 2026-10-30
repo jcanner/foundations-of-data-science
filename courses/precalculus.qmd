@@ -284,5 +284,7 @@ Students identify the observed range of lengths and predict weights inside and o
 After this lesson, students should now understand that functions can model relationships in the real world, and help us make predictions. Linear and quadratic models are simple examples of the types of models that can be used with machine learning. However, not all models are good models and are only approximations, so they may not always be accurate or make sense outside of the context of our data.
 
 
-## Additional Resources
+## Ethics and Equiity Prompts
+
+
 
