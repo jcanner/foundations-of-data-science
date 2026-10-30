@@ -5,31 +5,24 @@ subtitle: "Partial derivatives, gradients, contours, and gradient descent"
 
 ## Course Description
 
-Vector valued functions, calculus of functions of more than one
-variable, partial derivatives, multiple integration, Green’s Theorem,
-Stokes’ Theorem, divergence theorem.
+Vector valued functions, calculus of functions of more than one variable, partial derivatives, multiple integration, Green’s Theorem, Stokes’ Theorem, divergence theorem.
 
 ::: {.callout-note collapse="true"}
 ### Course Content
 
 1.  Vectors and vector operations in two and three dimensions;
 
-2.  Vector and parametric equations of lines and planes; rectangular
-    equation of a plane;
+2.  Vector and parametric equations of lines and planes; rectangular     equation of a plane;
 
 3.  Dot, cross, and triple products and projections;
 
-4.  Differentiability and differentiation including partial derivatives,
-    chain rule, higher-order derivatives, directional derivatives, and
-    the gradient;
+4.  Differentiability and differentiation including partial derivatives, chain rule, higher-order derivatives, directional derivatives, and the gradient;
 
 5.  Arc length and curvature; tangent, normal, binormal vectors;
 
-6.  Vector-valued functions and their derivatives and integrals; finding
-    velocity and acceleration;
+6.  Vector-valued functions and their derivatives and integrals; finding velocity and acceleration;
 
-7.  Real-valued functions of several variables, level curves and
-    surfaces;
+7.  Real-valued functions of several variables, level curves and surfaces;
 
 8.  Limits, continuity, and properties of limits and continuity;
 
@@ -89,12 +82,15 @@ Upon successful completion of the course, students will be able to:
 :::
 
 
+
+
 ## Connections to Data Science: Gradient Descent
 
-**Partial derivatives** connect directly to gradient descent through the gradient vector, which collects the rate of change of a multivariable function in each coordinate direction. Because the gradient points toward steepest ascent, its negative identifies the locally steepest direction of decrease; gradient descent follows this direction iteratively to approximate a local minimum. In data science and AI, this method is used to minimize loss functions defined over high-dimensional parameter spaces, providing the mathematical mechanism behind fitting regression models, training neural networks, and optimizing other learning systems.
+**Partial derivatives and the gradient (Course Content #4)** connect directly to gradient descent through the gradient vector, which collects the rate of change of a multivariable function in each coordinate direction. Because the gradient points toward steepest ascent, its negative identifies the locally steepest direction of decrease; gradient descent follows this direction iteratively to approximate a local minimum. In data science and AI, this method is used to minimize loss functions defined over high-dimensional parameter spaces, providing the mathematical mechanism behind fitting regression models, training neural networks, and optimizing other learning systems.
 
 
 ## Goals
+
 
 
 ## Activities
@@ -110,7 +106,7 @@ Upon successful completion of the course, students will be able to:
 
 
 
-## Ethics and equity prompt
+## Ethics and Equity Prompt
 
 Optimization requires an objective. 
 
