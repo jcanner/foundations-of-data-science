@@ -114,7 +114,7 @@ Ask students to record the model and explain:
 - What does the model summarize, and what variation does it leave unexplained?
 
 
-###Part 3: Investigating The model
+### Part 3: Investigating The model
 
 `residual = observed body mass − predicted body mass`
 
@@ -126,7 +126,7 @@ Groups discuss:
 - What might change if the model is fit separately for each species?
 - Can the model be generalized to penguins beyond those represented in the data?
 
-Part 4: Sampling and data reliability
+### Part 4: Sampling and data reliability
 
 Have students consider how the analysis might change if:
 
