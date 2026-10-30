@@ -5,10 +5,25 @@ subtitle: "Visualization, cleaning, inference, regression, and prediction"
 
 ## Course Description
 
+MATH 110 uses probability techniques, hypothesis testing, and predictive techniques to support decision-making. Students explore descriptive statistics, probability and sampling distributions, statistical inference, correlation and linear regression, analysis of variance, chi-square and t-tests, and technology-based statistical analysis. Applications use data from a broad range of disciplines.
 
 ::: {.callout-note collapse="true"}
 ### Course Content
 
+
+1. Summarizing data graphically and numerically
+2. Descriptive statistics: measurement, measures of central tendency, and variation
+3. Sample spaces and probability
+4. Random variables and expected value
+5. Sampling and sampling distributions
+6. Discrete distributions, including the binomial distribution
+7. Continuous distributions, including the normal distribution
+8. The Central Limit Theorem
+9. Estimation and confidence intervals
+10. Hypothesis testing and inference, including one- and two-population t-tests and the chi-square test
+11. Correlation, regression lines, and analysis of variance (ANOVA)
+12. Applications using data from at least four of these disciplines: business, economics, social science, psychology, political science, administration of justice, life science, physical science, health science, information technology, and education
+13. Technology-based statistical analysis
 
 :::
 
@@ -17,27 +32,109 @@ subtitle: "Visualization, cleaning, inference, regression, and prediction"
 
 Upon successful completion of the course, students will be able to:
 
+1. Interpret data displayed in tables and graphs.
+2. Apply concepts of sample space and probability.
+3. Calculate measures of central tendency and variation for a data set.
+4. Identify standard methods of obtaining data and the advantages and disadvantages of each.
+5. Calculate the mean and variance of a discrete distribution.
+6. Calculate probabilities using normal and t-distributions.
+7. Distinguish between sample and population distributions and explain the role of the Central Limit Theorem.
+8. Construct and interpret confidence intervals.
+9. Determine and interpret statistical significance, including p-values.
+10. Interpret output from a technology-based statistical analysis.
+11. Explain hypothesis testing, including Type I and Type II errors.
+12. Formulate hypothesis tests involving samples from one and two populations.
+13. Select an appropriate technique for testing a hypothesis and interpret the result.
+14. Use regression lines and ANOVA for estimation and inference, and interpret associated statistics.
+15. Use appropriate statistical techniques to analyze and interpret applications based on data from at least four of the disciplines listed above.
+
 
 :::
 
 
 ## Connections to Data Science: 
 
+This lesson connects introductory statistics with data science through **prediction**. Students use a regression model to estimate penguin body mass from flipper length, then investigate how visualization, data cleaning, sampling, and model choices affect the prediction.
+
+Students consider how a model is built and interpreted, what makes a prediction useful, and why a model should not be treated as a perfect description of every individual.
+
 ## Goals
 
+By the end of this lesson, students will be able to:
+
+1. Identify the explanatory variable (feature) and response variable (target).
+2. Use a scatterplot and linear regression model to make a prediction.
+3. Calculate and interpret a residual.
+4. Explain why a predicted value will not accurately describe every individual with the same explanatory-variable value.
+5. Describe how sample size, sampling bias, missing data, and outliers can affect predictions.
+6. Distinguish interpolation from extrapolation.
+7. Explain why association does not, by itself, demonstrate causation.
+8. Consider whether one model is appropriate for different groups, such as different penguin species.
+
+**Driving question:** How can we use regression to make a prediction, and how can we evaluate its reliability?
 
 ## Activities
 
+
 ### Introduction
 
+Ask students to brainstorm five predictions people make in everyday life. Examples could include the weather, a sports result, college admission, or health risk. Record a few on the board.
+
+Discuss:
+
+- What are we predicting?
+- What information might help us make the prediction?
+- What could make it inaccurate?
+- How is predicting different from describing data we have already collected?
+
+Introduce the idea that a prediction is an estimate based on a model, not a guarantee about an individual.
+
+### Part 1: Build a Plot 
+
+HERE I NEED TO PUT A SCATTER PLOT OF FLIPPER LENGTH AND BODY MASS
+
+Ask students to identify:
+
+- The explanatory variable, or feature
+- The response variable, or target
+- The direction and form of the association
+- Any clusters, gaps, or unusual observations
+
+Have students sketch or describe where they expect a regression line to fall before using technology to fit one.
+
+### Part 2: Fit and Interpret a Regression Model
+
+HERE I WILL fit a linear regression model with flipper length as the explanatory variable and body mass as the response !!!!
+
+Ask students to record the model and explain:
+
+- What does the slope mean in context?
+- What does the intercept represent?
+- Is the intercept meaningful for penguins in this data?
+- What does the model summarize, and what variation does it leave unexplained?
 
 
+###Part 3: Investigating The model
 
+`residual = observed body mass − predicted body mass`
 
+Groups discuss:
 
+- Is the prediction higher or lower than the observed value?
+- Does every penguin with that flipper length have the predicted body mass? Why not?
+- Is the prediction interpolation or extrapolation?
+- What might change if the model is fit separately for each species?
+- Can the model be generalized to penguins beyond those represented in the data?
 
+Part 4: Sampling and data reliability
 
+Have students consider how the analysis might change if:
 
+- The sample included only a small number of penguins.
+- The sample came from one island or one species.
+- Rows with missing values were removed.
+- An unusual observation was excluded.
+- The model was used to predict outside the range of observed flipper lengths.
 
 
 
