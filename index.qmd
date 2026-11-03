@@ -21,6 +21,7 @@ We will focus on the following courses which will assume the model defined by th
 
 
 In each topic, the ethical aspects of the data science topics will be included as an ethics module for the topic with applications to the classroom integration.These may include:  
+
 - Dealing with data
 - Limits of models
 - Noise in data
@@ -30,11 +31,13 @@ In each topic, the ethical aspects of the data science topics will be included a
 - Use of ChatGPT/LLMs and other AI tools
 
 Each topic will include support for pedagogical practices for integrating the topics into the classroom using equity minded and inclusive practices. This can include activities such as:  
+
 - Projects (problem-based learning)
 - Discussions (inquiry-based learning)
 - Group activities (active learning)
 
 And may use any of the following tech tools  
+
 - Colab/jupyter notebooks or Quarto.  
 - Google docs, spreadsheets, etc.
 - Desmos, Geogebra, etc.
