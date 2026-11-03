@@ -192,6 +192,7 @@ viewof input_species3 = Inputs.select(["Perch", "Bream", "Roach", "Pike", "Smelt
 #| echo: false
 #| input:
 #|  - input_species3
+fish <- read_csv("fish.csv", show_col_types = FALSE)
 fish |> 
   filter(Species == input_species3) |> 
   ggplot(mapping = 
