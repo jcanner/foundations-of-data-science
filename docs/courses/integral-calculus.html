@@ -118,7 +118,20 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#ethics-and-equity-prompt" id="toc-ethics-and-equity-prompt" class="nav-link active" data-scroll-target="#ethics-and-equity-prompt">Ethics and equity prompt</a></li>
+  <li><a href="#course-description" id="toc-course-description" class="nav-link active" data-scroll-target="#course-description">Course Description</a></li>
+  <li><a href="#connections-to-data-science-probability-theory-and-convergence" id="toc-connections-to-data-science-probability-theory-and-convergence" class="nav-link" data-scroll-target="#connections-to-data-science-probability-theory-and-convergence">Connections to Data Science: Probability Theory and Convergence</a></li>
+  <li><a href="#goals" id="toc-goals" class="nav-link" data-scroll-target="#goals">Goals</a></li>
+  <li><a href="#activities" id="toc-activities" class="nav-link" data-scroll-target="#activities">Activities</a>
+  <ul class="collapse">
+  <li><a href="#introduction" id="toc-introduction" class="nav-link" data-scroll-target="#introduction">Introduction</a></li>
+  </ul></li>
+  <li><a href="#ethics-and-equity-prompt" id="toc-ethics-and-equity-prompt" class="nav-link" data-scroll-target="#ethics-and-equity-prompt">Ethics and Equity Prompt</a></li>
+  <li><a href="#resources" id="toc-resources" class="nav-link" data-scroll-target="#resources">Resources</a>
+  <ul class="collapse">
+  <li><a href="#textbooks" id="toc-textbooks" class="nav-link" data-scroll-target="#textbooks">Textbooks</a></li>
+  <li><a href="#tutorials" id="toc-tutorials" class="nav-link" data-scroll-target="#tutorials">Tutorials</a></li>
+  <li><a href="#additional-lesson-plans-and-activities" id="toc-additional-lesson-plans-and-activities" class="nav-link" data-scroll-target="#additional-lesson-plans-and-activities">Additional Lesson Plans and Activities</a></li>
+  </ul></li>
   </ul>
 </nav>
     </div>
@@ -145,11 +158,97 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
+<section id="course-description" class="level2">
+<h2 class="anchored" data-anchor-id="course-description">Course Description</h2>
+<p>A second course in differential and integral calculus of a single variable: integration; techniques of integration; infinite sequences and series; polar and parametric equations; applications of integration.</p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-1-contents" aria-controls="callout-1" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>Course Content
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-1" class="callout-1-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<ol type="1">
+<li>Areas between curves;</li>
+<li>Volume, volume of a solid of revolution;</li>
+<li>Additional techniques of integration including integration by parts and trigonometric substitution;</li>
+<li>Numerical integration; trapezoidal and Simpson’s rule;</li>
+<li>Improper integrals;</li>
+<li>Applications of integration to areas and volumes;</li>
+<li>Additional applications such as work, arc length, area of a surface of revolution, moments and centers of mass, separable differential equations, growth and decay;</li>
+<li>Introduction to sequences and series;</li>
+<li>Multiple tests for convergence of sequences and series;</li>
+<li>Power series, radius of convergence, interval of convergence;</li>
+<li>Differentiation and integration of power series;</li>
+<li>Taylor series expansion of functions;</li>
+<li>Parametric equations and calculus with parametric curves; and</li>
+<li>Polar curves and calculus in polar coordinates;</li>
+</ol>
+</div>
+</div>
+</div>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-2-contents" aria-controls="callout-2" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>Course Objectives
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-2" class="callout-2-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>Upon successful completion of the course, students will be able to:</p>
+<ol type="1">
+<li>Evaluate indeterminate forms using L’Hopital’s Rule;</li>
+<li>Find derivatives of transcendental functions;</li>
+<li>Evaluate definite and indefinite integrals using a variety of integration formulas and techniques;</li>
+<li>Apply integration to areas and volumes, and other applications such as work or length of a curve;</li>
+<li>Evaluate improper integrals;</li>
+<li>Apply convergence tests to sequences and series;</li>
+<li>Represent functions as power series; and</li>
+<li>Graph, differentiate and integrate functions in polar and parametric form.</li>
+</ol>
+</div>
+</div>
+</div>
+</section>
+<section id="connections-to-data-science-probability-theory-and-convergence" class="level2">
+<h2 class="anchored" data-anchor-id="connections-to-data-science-probability-theory-and-convergence">Connections to Data Science: Probability Theory and Convergence</h2>
+<p>Integral calculus helps us understand how quantities accumulate, which makes it useful for both probability and optimization. In gradient descent, ideas such as convexity and convergence can be introduced in a simple way: convex functions have a bowl-like shape, and when the steps are chosen appropriately, repeatedly moving downhill can bring us closer to a minimum. Integrals also allow us to find the total area under probability distributions, which must equal 1 because it represents the total probability. For example, exponential, Gamma, and Beta distributions can be integrated analytically to study probabilities and expected values. The normal distribution is different: its total area and probabilities cannot be expressed using an elementary antiderivative, so we approximate them numerically. This provides a natural connection between integration techniques and the numerical methods used in statistics, data science, and machine learning.</p>
+</section>
+<section id="goals" class="level2">
+<h2 class="anchored" data-anchor-id="goals">Goals</h2>
+</section>
+<section id="activities" class="level2">
+<h2 class="anchored" data-anchor-id="activities">Activities</h2>
+<section id="introduction" class="level3">
+<h3 class="anchored" data-anchor-id="introduction">Introduction</h3>
+</section>
+</section>
 <section id="ethics-and-equity-prompt" class="level2">
-<h2 class="anchored" data-anchor-id="ethics-and-equity-prompt">Ethics and equity prompt</h2>
+<h2 class="anchored" data-anchor-id="ethics-and-equity-prompt">Ethics and Equity Prompt</h2>
 <p>Approximation choices can shape conclusions. Ask students when a coarse approximation is acceptable and when it may obscure harm or uncertainty.</p>
+</section>
+<section id="resources" class="level2">
+<h2 class="anchored" data-anchor-id="resources">Resources</h2>
+<section id="textbooks" class="level3">
+<h3 class="anchored" data-anchor-id="textbooks">Textbooks</h3>
+</section>
+<section id="tutorials" class="level3">
+<h3 class="anchored" data-anchor-id="tutorials">Tutorials</h3>
+</section>
+<section id="additional-lesson-plans-and-activities" class="level3">
+<h3 class="anchored" data-anchor-id="additional-lesson-plans-and-activities">Additional Lesson Plans and Activities</h3>
 
 
+</section>
 </section>
 
 </main> <!-- /main -->

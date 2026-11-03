@@ -293,17 +293,9 @@ After this lesson, students should now understand that functions can model relat
 
 ### Textbooks
 
-- [Essential Math for AI: Chapter 4. Optimization for Neural Networks](https://www.oreilly.com/library/view/essential-math-for/9781098107628/ch04.html#idm44895121768032)  
-
-- [Essential Math for Data Science: Chapter 5. Linear Regression - Gradient Descent](https://www.oreilly.com/library/view/essential-math-for/9781098102920/ch05.html)
-
-- [Multivariable Calculus in the Age of AI](https://wanghemath.github.io/Book-CalculusMulti/chapters/chapter-25-multivariable-calculus-for-data-science-and-machine-learning.html)
 
 ### Tutorials
 
-- [Khan Academy: Multivariable Calculus > Unit 3 > Lesson 4 > Gradient Descent](https://www.khanacademy.org/math/multivariable-calculus/applications-of-multivariable-derivatives/optimizing-multivariable-functions/a/what-is-gradient-descent)
-
-- [Learn-Co: Gradient Descent in 3D](https://github.com/learn-co-students/multivariable-calculus-gradient-descent-ds-apply-000)
 
 ### Lesson Plans and Activities
 

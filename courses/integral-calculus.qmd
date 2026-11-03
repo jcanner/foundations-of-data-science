@@ -18,7 +18,7 @@ A second course in differential and integral calculus of a single variable: inte
 6.  Applications of integration to areas and volumes;
 7.  Additional applications such as work, arc length, area of a surface of revolution, moments and centers of mass, separable differential equations, growth and decay;
 8.  Introduction to sequences and series;
-9.  Multiple tests for convergence of sequences and series; 
+9.  Multiple tests for convergence of sequences and series;
 10. Power series, radius of convergence, interval of convergence;
 11. Differentiation and integration of power series;
 12. Taylor series expansion of functions;
