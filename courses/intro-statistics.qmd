@@ -1,7 +1,48 @@
 ---
-title: "Introductory Statistics"
-subtitle: "Visualization, cleaning, inference, regression, and prediction"
+title: "Introduction Statistics"
+format: 
+  live-html:
+    webr:
+      packages: 
+        - ggplot2
+        - readr
+      resources: 
+        - https://raw.githubusercontent.com/jcanner/foundations-of-data-science/refs/heads/master/courses/data/fish.csv
+      cell-options:
+        warning: false
+        completion: false
+execute: 
+  warning: false 
+  message: false
+  echo: true
+embed-resources: true
+code-copy: true
+code-overflow: wrap
+toc: true
+number-sections: true
+css: ../styles.css
 ---
+
+{{< include ../_extensions/r-wasm/live/_knitr.qmd >}}  
+
+```{webr}
+#| label: theme
+#| include: false
+#| edit: false
+
+remotes::install_github("allisonhorst/palmerpenguins")
+
+library(palmerpenguins)
+library(ggplot2)
+library(readr)
+theme_set(theme_light())
+options(ggplot2.continuous.color = scale_color_viridis_c, 
+        ggplot2.continuous.fill = scale_fill_viridis_c,
+        ggplot2.discrete.color = scale_color_viridis_d,
+        ggplot2.discrete.fill = scale_fill_viridis_d)
+```
+
+
 
 ## Course Description
 
@@ -91,7 +132,23 @@ Introduce the idea that a prediction is an estimate based on a model, not a guar
 
 ### Part 1: Build a Plot 
 
-HERE I NEED TO PUT A SCATTER PLOT OF FLIPPER LENGTH AND BODY MASS
+```{webr}
+#| edit: false
+#| output: false
+data(package = 'palmerpenguins')
+
+head('palmerpenguins')
+```
+
+```{webr}
+#| edit: false
+#| echo: false
+
+ggplot(data = penguins, aes(x = flipper_length_mm, y = body_mass_g)) +
+  geom_point()
+
+```
+
 
 Ask students to identify:
 
@@ -104,17 +161,29 @@ Have students sketch or describe where they expect a regression line to fall bef
 
 ### Part 2: Fit and Interpret a Regression Model
 
-HERE I WILL fit a linear regression model with flipper length as the explanatory variable and body mass as the response !!!!
+```{webr}
+
+model <- lm(body_mass_g ~ flipper_length_mm, data = penguins)
+coef(model) 
+
+ggplot(penguins, aes(x = flipper_length_mm, y = body_mass_g)) +
+  geom_point() +
+  geom_smooth(method = "lm", formula = y ~ x, se = FALSE) 
+```
+
+After fitting our regression model, we found the equation of the best fit line to be $y_{bm} = 49.68557x - 5780.83136$
 
 Ask students to record the model and explain:
 
-- What does the slope mean in context?
-- What does the intercept represent?
-- Is the intercept meaningful for penguins in this data?
+- What does the slope mean in the context of the problem?
+- What does the intercept represent in the context of the problem?
+- Does the intercept make logical sense for our penguins?
 - What does the model summarize, and what variation does it leave unexplained?
 
 
 ### Part 3: Investigating The model
+
+One penguin named Bertha has a flipper length of 195mm. Calculate the predicted value of her body mass (g) and then find the residual using the following equation.
 
 `residual = observed body mass − predicted body mass`
 
@@ -140,8 +209,9 @@ Have students consider how the analysis might change if:
 
 ## Ethics and Equity prompt
 
-Data cleaning is not neutral. Ask students to document every cleaning decision and explain how each decision could affect conclusions.
+Lets investigate what happens when 
 
+This phenomenon is called Simpson's Paradox. 
 
 
 ## Resources
