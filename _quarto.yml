@@ -15,6 +15,18 @@ website:
         text: "About"
       - href: courses/precalculus.qmd
         text: "Precalculus"
+      - href: courses/differential-calculus.qmd
+        text: "Differential Calculus"
+      - href: courses/integral-calculus.qmd
+        text: "Ingtegral Calculus"
+      - href: courses/multivariable-calculus.qmd
+        text: "Multivariable Calculus"
+      - href: courses/linear-algebra.qmd
+        text: "Elementary Linear Algebra"
+      - href: courses/intro-statistics.qmd
+        text: "Introductory Statistics"
+        
+        
   page-footer:
     right: "This page is built with ❤️ and [Quarto](https://quarto.org/)."
     left: "&copy; Copyright 2026, Judith Canner and CA Learning Lab"
