@@ -22,7 +22,7 @@ number-sections: true
 css: ../styles.css
 ---
 
-{{< include ../_extensions/r-wasm/live/_knitr.qmd >}}  
+{{< include ../_extensions/r-wasm/live/_knitr.qmd >}}
 
 ```{webr}
 #| label: theme
@@ -34,8 +34,7 @@ options(ggplot2.continuous.color = scale_color_viridis_c,
         ggplot2.continuous.fill = scale_fill_viridis_c,
         ggplot2.discrete.color = scale_color_viridis_d,
         ggplot2.discrete.fill = scale_fill_viridis_d)
-
-fish <- read_csv("fish.csv", show_col_types = FALSE)
+fish <- read_csv("data/fish.csv", show_col_types = FALSE)
 ```
 
 ```{r}
@@ -43,51 +42,74 @@ fish <- read_csv("fish.csv", show_col_types = FALSE)
 #| include: false
 library(readr)
 library(ggplot2)
+fish <- read_csv("data/fish.csv", show_col_types = FALSE)
 ```
 
+## Course Description
 
-## Overview
-Precalculus students learn functions as graphs, tables, transformations, and symbolic rules. In data science, functions can be used as models, or simply mathematical descriptions of patterns for real data. The following discussion lesson plan provides instructors guidance on how to connect concepts about functions to data modeling at an introductory level. The goal is to help students see that functions can be used to approximate and describe real world relationships, which is the foundation of machine learning.
+Preparation for calculus: polynomial, absolute value, radical, rational, exponential, logarithmic, and trigonometric functions and their graphs; analytic geometry, polar coordinates
 
+::: {.callout-note collapse="true"}
+### Course Content
 
-## Integrating Data Science into Precalculus
-Precalculus provides a foundation in understanding functions, which are the foundations of all machine learning methods - everything is just another linear model in the end.  Therefore, emphasizing aspects of modeling with linear and non-linear functions will build connections between the content and data science and reinforce the need for Precalculus as a foundational course in data science
+1.  Functions including linear, polynomial, rational, radical, exponential, absolute value, logarithmic, trigonometric; definitions, evaluation, domain and range;
+2.  Inverses of functions;
+3.  Algebra of functions;
+4.  Graphs of functions including asymptotic behavior, intercepts, and vertices;
+5.  Transformations of quadratic, absolute value, radical, rational, logarithmic, exponential functions;
+6.  Equations including rational, linear, radical, polynomial, exponential, trigonometric, logarithmic, and absolute value;
+7.  Linear, nonlinear, and absolute value inequalities;
+8.  Systems of equations and inequalities;
+9.  Characterization of real and complex zeros of polynomials;
+10. Unit circle and right triangle trigonometry;
+11. Trigonometric and inverse trigonometric identities and formulas;
+12. Graphing trigonometric functions: period, amplitude, phase shift, inverse trigonometric functions; and
+13. Polar coordinates
+:::
 
-### Precalculus Content
+::: {.callout-note collapse="true"}
+### Course Objectives
 
-1. Evaluating functions 
-2. Graphs/functions
-3. Linear/nonlinear functions
-4. Exponential/log functions
-5. Interpreting graphs
-6. Modeling data.
+Upon successful completion of the course, students will be able to:
 
-### Data Science Content
+1.  Graph functions and relations in rectangular coordinates and polar coordinates;
+2.  Synthesize results from the graphs and/or equations of functions and relations;
+3.  Apply transformations to the graphs of functions and relations;
+4.  Recognize the relationship between functions and their inverses graphically and algebraically;
+5.  Solve and apply equations including rational, linear, polynomial, exponential, absolute value, radical, and logarithmic, and solve linear, nonlinear, and absolute value inequalities;
+6.  Solve systems of equations and inequalities;
+7.  Apply functions to model real world applications;
+8.  Identify special triangles and their related angle and side measures;
+9.  Evaluate the trigonometric function of an angle given in degree and radian measure;
+10. Manipulate and simplify a trigonometric expression;
+11. Solve trigonometric equations, triangles, and applications;
+12. Graph the basic trigonometric functions and apply changes in period, phase and amplitude to generate new graphs; and
+13. Prove trigonometric identities
+:::
 
-1. Explanatory/response variables
-2. Scatterplots
-3. Modeling
-4. Predictions
-5. Interpreting graphs
+## Connections to Data Science: Functions
+Precalculus provides a foundation for data science, machine learning, and AI by helping students understand how functions describe relationships in data. Students evaluate functions, work with graphs, compare linear and nonlinear relationships, and study exponential and logarithmic functions—tools that support modeling and prediction. Connecting these topics to explanatory and response variables, scatterplots, and data modeling gives students practice interpreting graphs and using models to make and assess predictions. These connections show how Precalculus prepares students to study data science and the mathematical ideas behind machine learning and AI.
+
 
 ## Goals
-1. Explain how functions can be introduced as models of data.
-2. Connect the idea of input/output to explanatory/response variables.
-3. Use real data sets (fish data set) to compare different function models.
-4. Discuss limitations of using mathematical models for predictions.
 
-## Lesson
-
-In precalculus, we describe a function as a rule that assigns each input exactly one output. In data science, we can view functions as a model. A model is a simplified representation of data that describes patterns and allows us to make predictions. 
-
-In this lesson we will be using the Fish Market Data set. This data set includes seven fish species and measurements such as their weight, length, height, and width. In this activity, students can use the physical features of the fish as input variables to predict a fish’s weight. This could be useful for fishermen, where measuring a fish’s length or width may be easier than weighing it. Students can compare linear and polynomial models to see which better represents the relationship between a fish’s measurements and its weight. 
-
-We can also introduce the idea that real data does not always have perfect linear patterns, such as a fish that may gain weight faster than the length increases. We can then discuss how nonlinear models may be helpful in describing different types of patterns in data. 
-
+1.  Explain how functions can be introduced as models of data.
+2.  Connect the idea of input/output to explanatory/response variables.
+3.  Use real data sets to compare different function models.
+4.  Discuss limitations of using mathematical models for predictions.
 
 ## Activity
 
+### Introduction
+In Precalculus, we describe a function as a rule that assigns each input exactly one output. In data science, we can view functions as a model. A model is a simplified representation of data that describes patterns and allows us to make predictions.
+
+In this lesson we will be using the [Fish Market data set]( https://www.kaggle.com/datasets/vipullrathod/fish-market). This data set includes seven fish species and measurements such as their weight, length, height, and width. In this activity, students can use the physical features of the fish as input variables to predict a fish’s weight. This could be useful for fishermen, where measuring a fish’s length or width may be easier than weighing it. Students can compare linear and polynomial models to see which better represents the relationship between a fish’s measurements and its weight.
+
+We also introduce the idea that real data does not always have perfect linear patterns, such as a fish that may gain weight faster than the length increases. We can then discuss how nonlinear models may be helpful in describing different types of patterns in data.
+
+
 ### Part 1: Which function fits the fish?
+
 Students compare linear, quadratic, power, and exponential models for predicting fish weight from length. Instructors discuss how visual fit, residual plots, and context guide model choice.
 
 Can we estimate the weight of a fish based on its other physical features?
@@ -122,14 +144,13 @@ fish |>
   )
 ```
 
-We can begin with only two variables where x = length, and y = weight. We can show students a scatterplot of fish length vs. weight for different species of fish. We can then have a discussion about the plot.
+We can begin with only two variables where `x = length`, and `y = weight`. We can show students a scatterplot of fish length vs. weight for different species of fish. We can then have a discussion about the plot.
 
-1. What do you notice about the relationship between length and weight?
-2. Is the relationship linear? Is it a function?
-3. "Does the relationship change depending on species? What do you notice is different?"
+1.  What do you notice about the relationship between length and weight?
+2.  Is the relationship linear? Is it a function?
+3.  "Does the relationship change depending on species? What do you notice is different?"
 
 ### Part 2: Now we can fit a linear model to our scatterplots and discuss what we notice.
-
 
 ```{ojs}
 //| echo: false
@@ -156,15 +177,9 @@ fish |>
   )
 ```
 
-We can then have students examine a linear model and discuss.
-1. For what species does the linear model accurately represent?
-2. What does the slope mean in the context of the problem?
-3. What does the y-intercept mean in the context of the problem?
-4. Does the y-intercept make logical sense?
-5. Does the line fit the model appropriately?
+We can then have students examine a linear model and discuss. 1. For what species does the linear model accurately represent? 2. What does the slope mean in the context of the problem? 3. What does the y-intercept mean in the context of the problem? 4. Does the y-intercept make logical sense? 5. Does the line fit the model appropriately?
 
 ### Part 3: Next, we will examine polynomial trend lines.
-
 
 ```{ojs}
 //| echo: false
@@ -193,12 +208,12 @@ fish |>
 
 Next, we can show students a polynomial trend line and discuss.
 
-1. How does this trend line compare to the linear trend line?
-2. Can we predict the length of a fish by using its weight?
+1.  How does this trend line compare to the linear trend line?
+2.  Can we predict the length of a fish by using its weight?
 
 ### Part 4: Transformed Variables
 
-Students can also explore whether transforming a variable can make the relationship appear more linear. We can create new columns for (Length^2) and (Length^3), and plot the weight against each transformed variable. Students can compare the transformed graphs with the original plot and discuss which model looks more linear.
+Students can also explore whether transforming a variable can make the relationship appear more linear. We can create new columns for (Length\^2) and (Length\^3), and plot the weight against each transformed variable. Students can compare the transformed graphs with the original plot and discuss which model looks more linear.
 
 ```{ojs}
 //| echo: false
@@ -206,12 +221,8 @@ viewof input_species4 = Inputs.select(["Perch", "Bream", "Roach", "Pike", "Smelt
 
 ```
 
-:::: {layout="[50, 50]"}
-
+::::: {layout="[50, 50]"}
 ::: {#squared-column}
-
-
-
 ```{webr}
 #| edit: false
 #| echo: false
@@ -234,13 +245,9 @@ fish |>
     y = "Weight (grams)"
   )
 ```
-
 :::
 
-::: {#squared-column}
-
-
-
+::: {}
 ```{webr}
 #| edit: false
 #| echo: false
@@ -263,20 +270,17 @@ fish |>
     y = "Weight (grams)"
   )
 ```
-
 :::
+:::::
 
-::::
-
-
-1. Does plotting weight against (Length^2) or (Length^3) change the pattern?
-2. Which graph appears to be the most linear?
-3. Does a more linear graph make the predictions easier or more accurate?
-4. Take note of which species of fish work well with the two different transformations.
+1.  Does plotting weight against (Length\^2) or (Length\^3) change the pattern?
+2.  Which graph appears to be the most linear?
+3.  Does a more linear graph make the predictions easier or more accurate?
+4.  Take note of which species of fish work well with the two different transformations.
 
 
+## Ethics and Equity Prompt
 
-### Activity 2: Domain, range, and model misuse
 Students identify the observed range of lengths and predict weights inside and outside that range. They label predictions as interpolation or extrapolation and explain why extrapolation can be misleading.
 
 ## Conclusion
@@ -284,5 +288,23 @@ Students identify the observed range of lengths and predict weights inside and o
 After this lesson, students should now understand that functions can model relationships in the real world, and help us make predictions. Linear and quadratic models are simple examples of the types of models that can be used with machine learning. However, not all models are good models and are only approximations, so they may not always be accurate or make sense outside of the context of our data.
 
 
-## Additional Resources
+
+## Resources
+
+### Textbooks
+
+- [Essential Math for AI: Chapter 4. Optimization for Neural Networks](https://www.oreilly.com/library/view/essential-math-for/9781098107628/ch04.html#idm44895121768032)  
+
+- [Essential Math for Data Science: Chapter 5. Linear Regression - Gradient Descent](https://www.oreilly.com/library/view/essential-math-for/9781098102920/ch05.html)
+
+- [Multivariable Calculus in the Age of AI](https://wanghemath.github.io/Book-CalculusMulti/chapters/chapter-25-multivariable-calculus-for-data-science-and-machine-learning.html)
+
+### Tutorials
+
+- [Khan Academy: Multivariable Calculus > Unit 3 > Lesson 4 > Gradient Descent](https://www.khanacademy.org/math/multivariable-calculus/applications-of-multivariable-derivatives/optimizing-multivariable-functions/a/what-is-gradient-descent)
+
+- [Learn-Co: Gradient Descent in 3D](https://github.com/learn-co-students/multivariable-calculus-gradient-descent-ds-apply-000)
+
+### Lesson Plans and Activities
+
 
