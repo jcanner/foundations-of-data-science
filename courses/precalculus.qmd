@@ -1,5 +1,5 @@
 ---
-title: "PreCalculus"
+title: "Precalculus"
 format: 
   live-html:
     webr:
@@ -146,7 +146,14 @@ fish |>
 
 We can begin with only two variables where `x = length`, and `y = weight`. We can show students a scatterplot of fish length vs. weight for different species of fish. We can then have a discussion about the plot.
 
-1.  What do you notice about the relationship between length and weight?
+1.  What do you notice about the relationship between length and weight? 
+
+:::{.callout-note collapse="true"}
+#### Answer
+There appears to be a nonlinear relationship.
+
+:::
+
 2.  Is the relationship linear? Is it a function?
 3.  "Does the relationship change depending on species? What do you notice is different?"
 

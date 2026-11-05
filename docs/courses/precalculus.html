@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>PreCalculus – Foundations of Data Science</title>
+<title>Precalculus – Foundations of Data Science</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -28094,7 +28094,7 @@ initializeRuntime();
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">PreCalculus</h1>
+<h1 class="title">Precalculus</h1>
 </div>
 
 
@@ -28242,6 +28242,24 @@ eyJhdHRyIjp7ImNvbXBsZXRpb24iOmZhbHNlLCJlY2hvIjpmYWxzZSwiZWRpdCI6ZmFsc2UsImV2YWwi
 <p>We can begin with only two variables where <code>x = length</code>, and <code>y = weight</code>. We can show students a scatterplot of fish length vs. weight for different species of fish. We can then have a discussion about the plot.</p>
 <ol type="1">
 <li>What do you notice about the relationship between length and weight?</li>
+</ol>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-3-contents" aria-controls="callout-3" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>Answer
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-3" class="callout-3-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>There appears to be a nonlinear relationship.</p>
+</div>
+</div>
+</div>
+<ol start="2" type="1">
 <li>Is the relationship linear? Is it a function?</li>
 <li>“Does the relationship change depending on species? What do you notice is different?”</li>
 </ol>
@@ -28249,7 +28267,7 @@ eyJhdHRyIjp7ImNvbXBsZXRpb24iOmZhbHNlLCJlY2hvIjpmYWxzZSwiZWRpdCI6ZmFsc2UsImV2YWwi
 <section id="part-2-now-we-can-fit-a-linear-model-to-our-scatterplots-and-discuss-what-we-notice." class="level3" data-number="4.3">
 <h3 data-number="4.3" class="anchored" data-anchor-id="part-2-now-we-can-fit-a-linear-model-to-our-scatterplots-and-discuss-what-we-notice."><span class="header-section-number">4.3</span> Part 2: Now we can fit a linear model to our scatterplots and discuss what we notice.</h3>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code hidden" id="cb2" data-startfrom="156" data-source-offset="0"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 155;"><span id="cb2-156"><a href="#cb2-156" aria-hidden="true" tabindex="-1"></a>viewof input_species2 <span class="op">=</span> Inputs<span class="op">.</span><span class="fu">select</span>([<span class="st">&quot;Perch&quot;</span><span class="op">,</span> <span class="st">&quot;Bream&quot;</span><span class="op">,</span> <span class="st">&quot;Roach&quot;</span><span class="op">,</span> <span class="st">&quot;Pike&quot;</span><span class="op">,</span> <span class="st">&quot;Smelt&quot;</span><span class="op">,</span> <span class="st">&quot;Parkki&quot;</span><span class="op">,</span> <span class="st">&quot;Whitefish&quot;</span>])</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code hidden" id="cb2" data-startfrom="163" data-source-offset="0"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 162;"><span id="cb2-163"><a href="#cb2-163" aria-hidden="true" tabindex="-1"></a>viewof input_species2 <span class="op">=</span> Inputs<span class="op">.</span><span class="fu">select</span>([<span class="st">&quot;Perch&quot;</span><span class="op">,</span> <span class="st">&quot;Bream&quot;</span><span class="op">,</span> <span class="st">&quot;Roach&quot;</span><span class="op">,</span> <span class="st">&quot;Pike&quot;</span><span class="op">,</span> <span class="st">&quot;Smelt&quot;</span><span class="op">,</span> <span class="st">&quot;Parkki&quot;</span><span class="op">,</span> <span class="st">&quot;Whitefish&quot;</span>])</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-display">
 <div id="ojs-cell-2" data-nodetype="declaration">
 
@@ -28271,7 +28289,7 @@ eyJhdHRyIjp7ImNvbXBsZXRpb24iOmZhbHNlLCJlY2hvIjpmYWxzZSwiZWRpdCI6ZmFsc2UsImV2YWwi
 <section id="part-3-next-we-will-examine-polynomial-trend-lines." class="level3" data-number="4.4">
 <h3 data-number="4.4" class="anchored" data-anchor-id="part-3-next-we-will-examine-polynomial-trend-lines."><span class="header-section-number">4.4</span> Part 3: Next, we will examine polynomial trend lines.</h3>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code hidden" id="cb3" data-startfrom="185" data-source-offset="0"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 184;"><span id="cb3-185"><a href="#cb3-185" aria-hidden="true" tabindex="-1"></a>viewof input_species3 <span class="op">=</span> Inputs<span class="op">.</span><span class="fu">select</span>([<span class="st">&quot;Perch&quot;</span><span class="op">,</span> <span class="st">&quot;Bream&quot;</span><span class="op">,</span> <span class="st">&quot;Roach&quot;</span><span class="op">,</span> <span class="st">&quot;Pike&quot;</span><span class="op">,</span> <span class="st">&quot;Smelt&quot;</span><span class="op">,</span> <span class="st">&quot;Parkki&quot;</span><span class="op">,</span> <span class="st">&quot;Whitefish&quot;</span>])</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code hidden" id="cb3" data-startfrom="192" data-source-offset="0"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 191;"><span id="cb3-192"><a href="#cb3-192" aria-hidden="true" tabindex="-1"></a>viewof input_species3 <span class="op">=</span> Inputs<span class="op">.</span><span class="fu">select</span>([<span class="st">&quot;Perch&quot;</span><span class="op">,</span> <span class="st">&quot;Bream&quot;</span><span class="op">,</span> <span class="st">&quot;Roach&quot;</span><span class="op">,</span> <span class="st">&quot;Pike&quot;</span><span class="op">,</span> <span class="st">&quot;Smelt&quot;</span><span class="op">,</span> <span class="st">&quot;Parkki&quot;</span><span class="op">,</span> <span class="st">&quot;Whitefish&quot;</span>])</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-display">
 <div id="ojs-cell-3" data-nodetype="declaration">
 
@@ -28298,7 +28316,7 @@ eyJhdHRyIjp7ImNvbXBsZXRpb24iOmZhbHNlLCJlY2hvIjpmYWxzZSwiZWRpdCI6ZmFsc2UsImV2YWwi
 <h3 data-number="4.5" class="anchored" data-anchor-id="part-4-transformed-variables"><span class="header-section-number">4.5</span> Part 4: Transformed Variables</h3>
 <p>Students can also explore whether transforming a variable can make the relationship appear more linear. We can create new columns for (Length^2) and (Length^3), and plot the weight against each transformed variable. Students can compare the transformed graphs with the original plot and discuss which model looks more linear.</p>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code hidden" id="cb4" data-startfrom="220" data-source-offset="0"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 219;"><span id="cb4-220"><a href="#cb4-220" aria-hidden="true" tabindex="-1"></a>viewof input_species4 <span class="op">=</span> Inputs<span class="op">.</span><span class="fu">select</span>([<span class="st">&quot;Perch&quot;</span><span class="op">,</span> <span class="st">&quot;Bream&quot;</span><span class="op">,</span> <span class="st">&quot;Roach&quot;</span><span class="op">,</span> <span class="st">&quot;Pike&quot;</span><span class="op">,</span> <span class="st">&quot;Smelt&quot;</span><span class="op">,</span> <span class="st">&quot;Parkki&quot;</span><span class="op">,</span> <span class="st">&quot;Whitefish&quot;</span>])</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code hidden" id="cb4" data-startfrom="227" data-source-offset="0"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 226;"><span id="cb4-227"><a href="#cb4-227" aria-hidden="true" tabindex="-1"></a>viewof input_species4 <span class="op">=</span> Inputs<span class="op">.</span><span class="fu">select</span>([<span class="st">&quot;Perch&quot;</span><span class="op">,</span> <span class="st">&quot;Bream&quot;</span><span class="op">,</span> <span class="st">&quot;Roach&quot;</span><span class="op">,</span> <span class="st">&quot;Pike&quot;</span><span class="op">,</span> <span class="st">&quot;Smelt&quot;</span><span class="op">,</span> <span class="st">&quot;Parkki&quot;</span><span class="op">,</span> <span class="st">&quot;Whitefish&quot;</span>])</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-display">
 <div id="ojs-cell-4" data-nodetype="declaration">
 
