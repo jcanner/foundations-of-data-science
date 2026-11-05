@@ -88,7 +88,7 @@
     "href": "courses/intro-statistics.html#ethics-and-equity-prompt",
     "title": "Introduction Statistics",
     "section": "5 Ethics and Equity prompt",
-    "text": "5 Ethics and Equity prompt\nLets investigate what happens when\nThis phenomenon is called Simpson’s Paradox."
+    "text": "5 Ethics and Equity prompt\nLets investigate one more scatter plot. This is the relationship between bill depth (mm) and bill length (mm)\n\n\n\n\n\n\n\n\nWhat direction is the linear relationship between bill depth and bill length?\nNow lets take a look at the same graph but with an additional variable of species of penguins.\n\n\n\n\n\n\n\n\nWhat can we say about the direction of the linear relationship between bill depth and bill length now with the additional variable?\nWhen data is stratified differently or includes a new confounding variable, the pattern of a relationship can change. This phenomenon is called Simpson’s Paradox."
   },
   {
     "objectID": "courses/intro-statistics.html#resources",

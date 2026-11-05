@@ -6,8 +6,8 @@ format:
       packages: 
         - ggplot2
         - readr
+        - palmerpenguins
       resources: 
-        - https://raw.githubusercontent.com/jcanner/foundations-of-data-science/refs/heads/master/courses/data/fish.csv
       cell-options:
         warning: false
         completion: false
@@ -93,7 +93,7 @@ Upon successful completion of the course, students will be able to:
 :::
 
 
-## Connections to Data Science: 
+## Connections to Data Science:
 
 This lesson connects introductory statistics with data science through **prediction**. Students use a regression model to estimate penguin body mass from flipper length, then investigate how visualization, data cleaning, sampling, and model choices affect the prediction.
 
@@ -209,9 +209,35 @@ Have students consider how the analysis might change if:
 
 ## Ethics and Equity prompt
 
-Lets investigate what happens when 
+Lets investigate one more scatter plot. This is the relationship between bill depth (mm) and bill length (mm)
 
-This phenomenon is called Simpson's Paradox. 
+```{webr}
+#| edit: false
+#| echo: false
+
+ggplot(data = penguins, aes(x = bill_depth_mm, y = bill_length_mm)) +
+  geom_point() +
+  geom_smooth(method = "lm", formula = y ~ x, se = FALSE) 
+
+```
+
+What direction is the linear relationship between bill depth and bill length?
+
+Now lets take a look at the same graph but with an additional variable of species of penguins.
+
+```{webr}
+#| edit: false
+#| echo: false
+
+ggplot(data = penguins, aes(x = bill_depth_mm, y = bill_length_mm, fill = species, color = species)) +
+  geom_point() +
+  geom_smooth(method = "lm", formula = y ~ x, se = FALSE) 
+
+```
+
+What can we say about the direction of the linear relationship between bill depth and bill length now with the additional variable?
+
+When data is stratified differently or includes a new confounding variable, the pattern of a relationship can change. This phenomenon is called Simpson's Paradox. 
 
 
 ## Resources
